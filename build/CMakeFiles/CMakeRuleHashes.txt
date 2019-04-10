@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+5cc8c9cad51e8eac5e89555a7dcba144 src/CMakeFiles/piforcast_autogen
+332ab2700fd357303295aec6aec6cfe1 src/qrc_resources.cpp
