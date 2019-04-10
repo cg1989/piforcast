@@ -11,29 +11,54 @@ Window
     
     Item{
         id: size
-        property int part: 10
+        property int part: 12
         property int fontsize: 10
+        property int offset_date: 2
     }
     
     //Heure
     Rectangle {
-        x: parent.width/3
-        y: 0
-        width: parent.width/3
-        height: parent.height/20
+        x: 0
+        y: (size.part-1)*(parent.height/size.part)
+        width: size.offset_date*parent.width/size.part
+        height: parent.height/size.part
         color: "white"
-        border.width:1
+        Text {
+            text: "16:02"
+            color: "#000000"
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
+            font.pixelSize: (parent.height+parent.width)/10
+            font.family: "Khmer OS"            
+        }
+    }
+    
+    //Date
+    Rectangle {
+        x: (size.part-size.offset_date)*(parent.width/size.part)
+        y: (size.part-1)*(parent.height/size.part)
+        width: size.offset_date*parent.width/size.part
+        height: parent.height/size.part
+        color: "white"
+        //border.width: 1
+        Text {
+            text: "Sam 21 avril"
+            color: "#000000"
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
+            font.pixelSize: (parent.height+parent.width)/10
+            font.family: "Khmer OS"            
+        }
     }
     
     
-    
-  //Master
+  //Master ###########################################################################################
     Rectangle {
         
         x: parent.width/size.part
         y: parent.height/size.part
-        width: 8*(parent.width/size.part)
-        height:  8*(parent.height/size.part)
+        width: (size.part-2)*(parent.width/size.part)
+        height:  (size.part-2)*(parent.height/size.part)
         //anchors.fill: parent
         color: "grey"
         

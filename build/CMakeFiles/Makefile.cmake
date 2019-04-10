@@ -39,6 +39,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/lib/x86_64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQmlProfilerServiceFactory.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQuickProfilerAdapterFactory.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QTcpServerConnectionFactory.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt5Quick/Qt5QuickConfig.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt5Quick/Qt5QuickConfigVersion.cmake"
   "/usr/share/cmake-3.12/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.12/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.12/Modules/CMakeCommonLanguageInclude.cmake"
