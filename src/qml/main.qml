@@ -12,7 +12,7 @@ Window
     Item{
         id: size
         property int part: 12
-        property int fontsize: 10
+        property int fontsize: 9
         property int offset_date: 2
     }
     
@@ -29,7 +29,7 @@ Window
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             font.pixelSize: (parent.height+parent.width)/10
-            font.family: "Khmer OS"            
+            font.family: "Manjari Bold"            
         }
     }
     
@@ -47,7 +47,7 @@ Window
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             font.pixelSize: (parent.height+parent.width)/10
-            font.family: "Khmer OS"            
+            font.family: "Manjari Bold"            
         }
     }
     
@@ -90,17 +90,25 @@ Window
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 font.pixelSize: (parent.height+parent.width)/10
-                font.family: "AnjaliOldLipi"
+                font.family: "Manjari regular"
                 font.bold : true
             }
             Text {
                 id: temperature
-                text: "20 °C"
+                text: "20"
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
-                font.pixelSize: (parent.height+parent.width)/10
+                font.pixelSize: (parent.height+parent.width)/size.fontsize
                 font.family: "Khmer OS"
+            }
+            Text {
+                text: "°C"
+                color: "#000000"
+                anchors.right: parent.right
+                anchors.verticalCenter: parent.verticalCenter
+                font.pixelSize: (parent.height+parent.width)/13
+                font.family: "Manjari regular"
             }
         }
         
@@ -116,19 +124,26 @@ Window
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 font.pixelSize: (parent.height+parent.width)/10
-                font.family: "AnjaliOldLipi"
+                font.family: "Manjari regular"
                 font.bold : true
             }
             Text {
                 id: pression
-                text: "996 hPa"
+                text: "996"
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
-                font.pixelSize: (parent.height+parent.width)/10
+                font.pixelSize: (parent.height+parent.width)/size.fontsize
                 font.family: "Khmer OS"
             }
-        
+            Text {
+                text: "hPa"
+                color: "#000000"
+                anchors.right: parent.right
+                anchors.verticalCenter: parent.verticalCenter
+                font.pixelSize: (parent.height+parent.width)/13
+                font.family: "Manjari regular"
+            }
         }
         
         //Humidité
@@ -143,21 +158,28 @@ Window
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 font.pixelSize: (parent.height+parent.width)/10
-                font.family: "AnjaliOldLipi"
+                font.family: "Manjari regular"
                 font.bold : true
             
             }
             Text {
                 id: humidity
-                text: "60 %"
+                text: "60"
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
-                font.pixelSize: (parent.height+parent.width)/10
+                font.pixelSize: (parent.height+parent.width)/size.fontsize
                 font.family: "Khmer OS"
             }
+            Text {
+                text: "%"
+                color: "#000000"
+                anchors.right: parent.right
+                anchors.verticalCenter: parent.verticalCenter
+                font.pixelSize: (parent.height+parent.width)/13
+                font.family: "Manjari regular"
+            }
         }
-        
         //ligne
          Rectangle {
             x: 0
