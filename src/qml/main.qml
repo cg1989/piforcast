@@ -82,6 +82,14 @@ Window
                 anchors.centerIn: parent
                 source:"Icons/rain.svg"
             }
+//             MouseArea {
+//                 anchors.fill: parent
+//                 onClicked: function() {
+//                     capture.refresh()
+//                  //   var t = "<b>Température</b><br>%1°"
+//                     console.log(t.arg(capteur.temp))
+//                 }
+//             }
         }
         
         //Temperature
@@ -228,4 +236,17 @@ Window
             }
         }
     }
+    
+//     function update() {
+//         var t = "<b>Température</b><br>%1°"
+// 		temperature.text = t.arg(capteur.temp)
+// 	}
+//     Timer {
+// 		id: globalTimer
+// 		interval: 1000
+// 		repeat: true
+// 		running: true
+// 		triggeredOnStart: true
+// 		onTriggered: update()
+// 	}
 }
