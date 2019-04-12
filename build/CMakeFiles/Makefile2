@@ -90,7 +90,7 @@ src/preinstall:
 src/CMakeFiles/piforcast.dir/all: src/CMakeFiles/piforcast_autogen.dir/all
 	$(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/depend
 	$(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target piforcast"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target piforcast"
 .PHONY : src/CMakeFiles/piforcast.dir/all
 
 # Include target in all.
@@ -100,7 +100,7 @@ all: src/CMakeFiles/piforcast.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/piforcast.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cam/projects/piforcast/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cam/projects/piforcast/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/piforcast.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cam/projects/piforcast/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/piforcast.dir/rule
@@ -127,7 +127,7 @@ clean: src/CMakeFiles/piforcast.dir/clean
 src/CMakeFiles/piforcast_autogen.dir/all:
 	$(MAKE) -f src/CMakeFiles/piforcast_autogen.dir/build.make src/CMakeFiles/piforcast_autogen.dir/depend
 	$(MAKE) -f src/CMakeFiles/piforcast_autogen.dir/build.make src/CMakeFiles/piforcast_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=6 "Built target piforcast_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=7 "Built target piforcast_autogen"
 .PHONY : src/CMakeFiles/piforcast_autogen.dir/all
 
 # Build rule for subdir invocation for target.

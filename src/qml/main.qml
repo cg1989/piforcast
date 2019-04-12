@@ -1,6 +1,6 @@
 import QtQuick 2.0
 import QtQuick.Window 2.0
-
+import CapteurClass 1.0
 
 
 Window
@@ -8,6 +8,12 @@ Window
     visible: true
     width: 800
     height: 600
+    
+    Capteur {
+        id: capteur
+    }
+
+
     
     Item{
         id: size
@@ -95,7 +101,7 @@ Window
             }
             Text {
                 id: temperature
-                text: "20"
+                text: capteur.temp
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -129,7 +135,7 @@ Window
             }
             Text {
                 id: pression
-                text: "996"
+                text: capteur.pres
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -164,7 +170,7 @@ Window
             }
             Text {
                 id: humidity
-                text: "60"
+                text: capteur.humi
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
