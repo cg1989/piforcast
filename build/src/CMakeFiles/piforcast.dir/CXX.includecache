@@ -6,25 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/home/cam/projects/piforcast/build/src/piforcast_autogen/EWIEGA46WW/moc_capteur.cpp
-../../../../src/capteur.h
-/home/cam/projects/piforcast/src/capteur.h
+/home/cam/projects/piforcast/build/src/piforcast_autogen/EWIEGA46WW/moc_capteur2.cpp
+../../../../src/capteur2.h
+/home/cam/projects/piforcast/src/capteur2.h
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
 -
 
 /home/cam/projects/piforcast/build/src/piforcast_autogen/mocs_compilation.cpp
-EWIEGA46WW/moc_capteur.cpp
-/home/cam/projects/piforcast/build/src/piforcast_autogen/EWIEGA46WW/moc_capteur.cpp
+EWIEGA46WW/moc_capteur2.cpp
+/home/cam/projects/piforcast/build/src/piforcast_autogen/EWIEGA46WW/moc_capteur2.cpp
 
 /home/cam/projects/piforcast/build/src/qrc_resources.cpp
 
-/home/cam/projects/piforcast/src/capteur.cpp
-capteur.h
-/home/cam/projects/piforcast/src/capteur.h
+/home/cam/projects/piforcast/src/capteur2.cpp
+capteur2.h
+/home/cam/projects/piforcast/src/capteur2.h
+QDebug
+-
 
-/home/cam/projects/piforcast/src/capteur.h
+/home/cam/projects/piforcast/src/capteur2.h
 QObject
 -
 
@@ -33,8 +35,14 @@ QGuiApplication
 -
 QQmlApplicationEngine
 -
-capteur.h
-/home/cam/projects/piforcast/src/capteur.h
+QQmlContext
+-
+capteur2.h
+/home/cam/projects/piforcast/src/capteur2.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
+qdebug.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 qobject.h
@@ -772,6 +780,10 @@ QtNetwork/qtnetwork-config.h
 qqmlapplicationengine.h
 /usr/include/x86_64-linux-gnu/qt5/QtQml/qqmlapplicationengine.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtQml/QQmlContext
+qqmlcontext.h
+/usr/include/x86_64-linux-gnu/qt5/QtQml/qqmlcontext.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtQml/qjsengine.h
 QtCore/qmetatype.h
 -
@@ -818,6 +830,22 @@ QtCore/qurl.h
 QtCore/qobject.h
 -
 QtCore/qlist.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtQml/qqmlcontext.h
+QtCore/qurl.h
+-
+QtCore/qobject.h
+-
+QtCore/qlist.h
+-
+QtCore/qpair.h
+-
+QtQml/qjsvalue.h
+-
+QtCore/qmetatype.h
+-
+QtCore/qvariant.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtQml/qqmldebug.h

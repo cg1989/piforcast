@@ -1,6 +1,6 @@
 import QtQuick 2.0
 import QtQuick.Window 2.0
-import CapteurClass 1.0
+//import CapteurClass 1.0
 
 
 Window
@@ -9,10 +9,10 @@ Window
     width: 800
     height: 600
     
-    Capteur {
-        id: capteur
-    }
-
+//     Capteur {
+//         id: capteur
+//     }
+    
 
     
     Item{

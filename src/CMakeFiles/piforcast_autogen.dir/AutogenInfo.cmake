@@ -10,7 +10,7 @@ set(AM_CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE "")
 set(AM_BUILD_DIR "/home/cam/projects/piforcast/src/piforcast_autogen")
 set(AM_INCLUDE_DIR "include")
 # Files
-set(AM_SOURCES "/home/cam/projects/piforcast/src/capteur.cpp")
+set(AM_SOURCES "/home/cam/projects/piforcast/src/capteur2.cpp")
 set(AM_HEADERS "")
 set(AM_SETTINGS_FILE "/home/cam/projects/piforcast/src/CMakeFiles/piforcast_autogen.dir/AutogenOldSettings.txt")
 # Qt

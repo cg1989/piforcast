@@ -64,18 +64,18 @@ src/qrc_resources.cpp: ../src/resources.qrc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating qrc_resources.cpp"
 	cd /home/cam/projects/piforcast/build/src && /usr/lib/qt5/bin/rcc --name resources --output /home/cam/projects/piforcast/build/src/qrc_resources.cpp /home/cam/projects/piforcast/src/resources.qrc
 
-src/CMakeFiles/piforcast.dir/capteur.cpp.o: src/CMakeFiles/piforcast.dir/flags.make
-src/CMakeFiles/piforcast.dir/capteur.cpp.o: ../src/capteur.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/piforcast.dir/capteur.cpp.o"
-	cd /home/cam/projects/piforcast/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/piforcast.dir/capteur.cpp.o -c /home/cam/projects/piforcast/src/capteur.cpp
+src/CMakeFiles/piforcast.dir/capteur2.cpp.o: src/CMakeFiles/piforcast.dir/flags.make
+src/CMakeFiles/piforcast.dir/capteur2.cpp.o: ../src/capteur2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/piforcast.dir/capteur2.cpp.o"
+	cd /home/cam/projects/piforcast/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/piforcast.dir/capteur2.cpp.o -c /home/cam/projects/piforcast/src/capteur2.cpp
 
-src/CMakeFiles/piforcast.dir/capteur.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/piforcast.dir/capteur.cpp.i"
-	cd /home/cam/projects/piforcast/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cam/projects/piforcast/src/capteur.cpp > CMakeFiles/piforcast.dir/capteur.cpp.i
+src/CMakeFiles/piforcast.dir/capteur2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/piforcast.dir/capteur2.cpp.i"
+	cd /home/cam/projects/piforcast/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cam/projects/piforcast/src/capteur2.cpp > CMakeFiles/piforcast.dir/capteur2.cpp.i
 
-src/CMakeFiles/piforcast.dir/capteur.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/piforcast.dir/capteur.cpp.s"
-	cd /home/cam/projects/piforcast/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cam/projects/piforcast/src/capteur.cpp -o CMakeFiles/piforcast.dir/capteur.cpp.s
+src/CMakeFiles/piforcast.dir/capteur2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/piforcast.dir/capteur2.cpp.s"
+	cd /home/cam/projects/piforcast/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cam/projects/piforcast/src/capteur2.cpp -o CMakeFiles/piforcast.dir/capteur2.cpp.s
 
 src/CMakeFiles/piforcast.dir/main.cpp.o: src/CMakeFiles/piforcast.dir/flags.make
 src/CMakeFiles/piforcast.dir/main.cpp.o: ../src/main.cpp
@@ -118,7 +118,7 @@ src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.s: cmake_for
 
 # Object files for target piforcast
 piforcast_OBJECTS = \
-"CMakeFiles/piforcast.dir/capteur.cpp.o" \
+"CMakeFiles/piforcast.dir/capteur2.cpp.o" \
 "CMakeFiles/piforcast.dir/main.cpp.o" \
 "CMakeFiles/piforcast.dir/qrc_resources.cpp.o" \
 "CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o"
@@ -126,7 +126,7 @@ piforcast_OBJECTS = \
 # External object files for target piforcast
 piforcast_EXTERNAL_OBJECTS =
 
-src/piforcast: src/CMakeFiles/piforcast.dir/capteur.cpp.o
+src/piforcast: src/CMakeFiles/piforcast.dir/capteur2.cpp.o
 src/piforcast: src/CMakeFiles/piforcast.dir/main.cpp.o
 src/piforcast: src/CMakeFiles/piforcast.dir/qrc_resources.cpp.o
 src/piforcast: src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o

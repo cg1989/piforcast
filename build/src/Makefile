@@ -140,32 +140,32 @@ piforcast_autogen/fast:
 	cd /home/cam/projects/piforcast/build && $(MAKE) -f src/CMakeFiles/piforcast_autogen.dir/build.make src/CMakeFiles/piforcast_autogen.dir/build
 .PHONY : piforcast_autogen/fast
 
-capteur.o: capteur.cpp.o
+capteur2.o: capteur2.cpp.o
 
-.PHONY : capteur.o
+.PHONY : capteur2.o
 
 # target to build an object file
-capteur.cpp.o:
-	cd /home/cam/projects/piforcast/build && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/capteur.cpp.o
-.PHONY : capteur.cpp.o
+capteur2.cpp.o:
+	cd /home/cam/projects/piforcast/build && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/capteur2.cpp.o
+.PHONY : capteur2.cpp.o
 
-capteur.i: capteur.cpp.i
+capteur2.i: capteur2.cpp.i
 
-.PHONY : capteur.i
+.PHONY : capteur2.i
 
 # target to preprocess a source file
-capteur.cpp.i:
-	cd /home/cam/projects/piforcast/build && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/capteur.cpp.i
-.PHONY : capteur.cpp.i
+capteur2.cpp.i:
+	cd /home/cam/projects/piforcast/build && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/capteur2.cpp.i
+.PHONY : capteur2.cpp.i
 
-capteur.s: capteur.cpp.s
+capteur2.s: capteur2.cpp.s
 
-.PHONY : capteur.s
+.PHONY : capteur2.s
 
 # target to generate assembly for a file
-capteur.cpp.s:
-	cd /home/cam/projects/piforcast/build && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/capteur.cpp.s
-.PHONY : capteur.cpp.s
+capteur2.cpp.s:
+	cd /home/cam/projects/piforcast/build && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/capteur2.cpp.s
+.PHONY : capteur2.cpp.s
 
 main.o: main.cpp.o
 
@@ -258,9 +258,9 @@ help:
 	@echo "... piforcast"
 	@echo "... edit_cache"
 	@echo "... piforcast_autogen"
-	@echo "... capteur.o"
-	@echo "... capteur.i"
-	@echo "... capteur.s"
+	@echo "... capteur2.o"
+	@echo "... capteur2.i"
+	@echo "... capteur2.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
