@@ -231,3 +231,8 @@ src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
 src/CMakeFiles/piforcast.dir/qrc_resources.cpp.o
  /home/cam/projects/piforcast/build/src/qrc_resources.cpp
+src/CMakeFiles/piforcast.dir/sensors.cpp.o
+ /home/cam/projects/piforcast/src/libcapteur/bme280.h
+ /home/cam/projects/piforcast/src/libcapteur/bme280_defs.h
+ /home/cam/projects/piforcast/src/sensors.cpp
+ /home/cam/projects/piforcast/src/sensors.h

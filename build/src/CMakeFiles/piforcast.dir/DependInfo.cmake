@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/cam/projects/piforcast/src/main.cpp" "/home/cam/projects/piforcast/build/src/CMakeFiles/piforcast.dir/main.cpp.o"
   "/home/cam/projects/piforcast/build/src/piforcast_autogen/mocs_compilation.cpp" "/home/cam/projects/piforcast/build/src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o"
   "/home/cam/projects/piforcast/build/src/qrc_resources.cpp" "/home/cam/projects/piforcast/build/src/CMakeFiles/piforcast.dir/qrc_resources.cpp.o"
+  "/home/cam/projects/piforcast/src/sensors.cpp" "/home/cam/projects/piforcast/build/src/CMakeFiles/piforcast.dir/sensors.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,7 +17,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "QT_CORE_LIB"
   "QT_GUI_LIB"
   "QT_NETWORK_LIB"
-  "QT_NO_DEBUG"
   "QT_QML_LIB"
   )
 

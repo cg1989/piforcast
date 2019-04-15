@@ -64,9 +64,22 @@ src/qrc_resources.cpp: ../src/resources.qrc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating qrc_resources.cpp"
 	cd /home/cam/projects/piforcast/build/src && /usr/lib/qt5/bin/rcc --name resources --output /home/cam/projects/piforcast/build/src/qrc_resources.cpp /home/cam/projects/piforcast/src/resources.qrc
 
+src/CMakeFiles/piforcast.dir/sensors.cpp.o: src/CMakeFiles/piforcast.dir/flags.make
+src/CMakeFiles/piforcast.dir/sensors.cpp.o: ../src/sensors.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/piforcast.dir/sensors.cpp.o"
+	cd /home/cam/projects/piforcast/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/piforcast.dir/sensors.cpp.o -c /home/cam/projects/piforcast/src/sensors.cpp
+
+src/CMakeFiles/piforcast.dir/sensors.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/piforcast.dir/sensors.cpp.i"
+	cd /home/cam/projects/piforcast/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cam/projects/piforcast/src/sensors.cpp > CMakeFiles/piforcast.dir/sensors.cpp.i
+
+src/CMakeFiles/piforcast.dir/sensors.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/piforcast.dir/sensors.cpp.s"
+	cd /home/cam/projects/piforcast/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cam/projects/piforcast/src/sensors.cpp -o CMakeFiles/piforcast.dir/sensors.cpp.s
+
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: src/CMakeFiles/piforcast.dir/flags.make
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: ../src/capteur2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/piforcast.dir/capteur2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/piforcast.dir/capteur2.cpp.o"
 	cd /home/cam/projects/piforcast/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/piforcast.dir/capteur2.cpp.o -c /home/cam/projects/piforcast/src/capteur2.cpp
 
 src/CMakeFiles/piforcast.dir/capteur2.cpp.i: cmake_force
@@ -79,7 +92,7 @@ src/CMakeFiles/piforcast.dir/capteur2.cpp.s: cmake_force
 
 src/CMakeFiles/piforcast.dir/main.cpp.o: src/CMakeFiles/piforcast.dir/flags.make
 src/CMakeFiles/piforcast.dir/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/piforcast.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/piforcast.dir/main.cpp.o"
 	cd /home/cam/projects/piforcast/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/piforcast.dir/main.cpp.o -c /home/cam/projects/piforcast/src/main.cpp
 
 src/CMakeFiles/piforcast.dir/main.cpp.i: cmake_force
@@ -92,7 +105,7 @@ src/CMakeFiles/piforcast.dir/main.cpp.s: cmake_force
 
 src/CMakeFiles/piforcast.dir/qrc_resources.cpp.o: src/CMakeFiles/piforcast.dir/flags.make
 src/CMakeFiles/piforcast.dir/qrc_resources.cpp.o: src/qrc_resources.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/piforcast.dir/qrc_resources.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/piforcast.dir/qrc_resources.cpp.o"
 	cd /home/cam/projects/piforcast/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/piforcast.dir/qrc_resources.cpp.o -c /home/cam/projects/piforcast/build/src/qrc_resources.cpp
 
 src/CMakeFiles/piforcast.dir/qrc_resources.cpp.i: cmake_force
@@ -105,7 +118,7 @@ src/CMakeFiles/piforcast.dir/qrc_resources.cpp.s: cmake_force
 
 src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o: src/CMakeFiles/piforcast.dir/flags.make
 src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o: src/piforcast_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o"
 	cd /home/cam/projects/piforcast/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o -c /home/cam/projects/piforcast/build/src/piforcast_autogen/mocs_compilation.cpp
 
 src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.i: cmake_force
@@ -118,6 +131,7 @@ src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.s: cmake_for
 
 # Object files for target piforcast
 piforcast_OBJECTS = \
+"CMakeFiles/piforcast.dir/sensors.cpp.o" \
 "CMakeFiles/piforcast.dir/capteur2.cpp.o" \
 "CMakeFiles/piforcast.dir/main.cpp.o" \
 "CMakeFiles/piforcast.dir/qrc_resources.cpp.o" \
@@ -126,6 +140,7 @@ piforcast_OBJECTS = \
 # External object files for target piforcast
 piforcast_EXTERNAL_OBJECTS =
 
+src/piforcast: src/CMakeFiles/piforcast.dir/sensors.cpp.o
 src/piforcast: src/CMakeFiles/piforcast.dir/capteur2.cpp.o
 src/piforcast: src/CMakeFiles/piforcast.dir/main.cpp.o
 src/piforcast: src/CMakeFiles/piforcast.dir/qrc_resources.cpp.o
@@ -136,7 +151,7 @@ src/piforcast: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.11.1
 src/piforcast: /usr/lib/x86_64-linux-gnu/libQt5Network.so.5.11.1
 src/piforcast: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.11.1
 src/piforcast: src/CMakeFiles/piforcast.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable piforcast"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable piforcast"
 	cd /home/cam/projects/piforcast/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/piforcast.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

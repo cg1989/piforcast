@@ -1,3 +1,5 @@
+
+ extern "C" {
 #include "sensors.h"
 
 
@@ -44,7 +46,7 @@ int8_t user_i2c_write(uint8_t id, uint8_t reg_addr, uint8_t *data, uint16_t len)
   return 0;
 }
 
-struct bme280_dev init()
+struct bme280_dev initSensor()
 {
   struct bme280_dev dev;
   int8_t rslt = BME280_OK;
@@ -64,7 +66,7 @@ struct bme280_dev init()
   dev.intf = BME280_I2C_INTF;
   dev.read = user_i2c_read;
   dev.write = user_i2c_write;
-  dev.delay_ms = 1000;
+  dev.delay_ms = user_delay_ms;
 
   rslt = bme280_init(&dev);
   printf("\r\n BME280 Init Result is:%d \r\n",rslt);
@@ -97,5 +99,6 @@ struct bme280_data stream_sensor_data_normal_mode(struct bme280_dev *dev)
 	return rslt;
 }
 
+}
 
 

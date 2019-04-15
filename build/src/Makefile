@@ -248,6 +248,33 @@ qrc_resources.cpp.s:
 	cd /home/cam/projects/piforcast/build && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/qrc_resources.cpp.s
 .PHONY : qrc_resources.cpp.s
 
+sensors.o: sensors.cpp.o
+
+.PHONY : sensors.o
+
+# target to build an object file
+sensors.cpp.o:
+	cd /home/cam/projects/piforcast/build && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/sensors.cpp.o
+.PHONY : sensors.cpp.o
+
+sensors.i: sensors.cpp.i
+
+.PHONY : sensors.i
+
+# target to preprocess a source file
+sensors.cpp.i:
+	cd /home/cam/projects/piforcast/build && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/sensors.cpp.i
+.PHONY : sensors.cpp.i
+
+sensors.s: sensors.cpp.s
+
+.PHONY : sensors.s
+
+# target to generate assembly for a file
+sensors.cpp.s:
+	cd /home/cam/projects/piforcast/build && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/sensors.cpp.s
+.PHONY : sensors.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -270,6 +297,9 @@ help:
 	@echo "... qrc_resources.o"
 	@echo "... qrc_resources.i"
 	@echo "... qrc_resources.s"
+	@echo "... sensors.o"
+	@echo "... sensors.i"
+	@echo "... sensors.s"
 .PHONY : help
 
 

@@ -9,7 +9,7 @@ Capteur::Capteur() {
 
 void Capteur::initialisation(){
     struct bme280_dev m_dev;
-    m_dev = init();
+    m_dev = initSensor();
 }
 
 void Capteur::refresh() {

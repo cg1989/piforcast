@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "piforcast_autogen"
   "CMakeFiles/piforcast_autogen.dir/AutogenOldSettings.cmake"
   "qrc_resources.cpp"
+  "CMakeFiles/piforcast.dir/sensors.cpp.o"
   "CMakeFiles/piforcast.dir/capteur2.cpp.o"
   "CMakeFiles/piforcast.dir/main.cpp.o"
   "CMakeFiles/piforcast.dir/qrc_resources.cpp.o"

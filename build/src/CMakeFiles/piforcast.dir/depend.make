@@ -231,3 +231,8 @@ src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o: /usr/incl
 
 src/CMakeFiles/piforcast.dir/qrc_resources.cpp.o: src/qrc_resources.cpp
 
+src/CMakeFiles/piforcast.dir/sensors.cpp.o: ../src/libcapteur/bme280.h
+src/CMakeFiles/piforcast.dir/sensors.cpp.o: ../src/libcapteur/bme280_defs.h
+src/CMakeFiles/piforcast.dir/sensors.cpp.o: ../src/sensors.cpp
+src/CMakeFiles/piforcast.dir/sensors.cpp.o: ../src/sensors.h
+

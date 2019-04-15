@@ -20,7 +20,7 @@ stdint.h
 stddef.h
 -
 
-/home/cam/projects/piforcast/src/sensors.cpp
+/home/cam/projects/piforcast/src/sensors.c
 sensors.h
 /home/cam/projects/piforcast/src/sensors.h
 libcapteur/bme280.h

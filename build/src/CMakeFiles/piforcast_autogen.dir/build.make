@@ -55,7 +55,7 @@ include src/CMakeFiles/piforcast_autogen.dir/progress.make
 
 src/CMakeFiles/piforcast_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cam/projects/piforcast/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target piforcast"
-	cd /home/cam/projects/piforcast/build/src && /usr/bin/cmake -E cmake_autogen /home/cam/projects/piforcast/build/src/CMakeFiles/piforcast_autogen.dir/AutogenInfo.cmake ""
+	cd /home/cam/projects/piforcast/build/src && /usr/bin/cmake -E cmake_autogen /home/cam/projects/piforcast/build/src/CMakeFiles/piforcast_autogen.dir/AutogenInfo.cmake Debug
 
 piforcast_autogen: src/CMakeFiles/piforcast_autogen
 piforcast_autogen: src/CMakeFiles/piforcast_autogen.dir/build.make
