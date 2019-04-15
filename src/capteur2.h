@@ -2,6 +2,7 @@
 #define CAPTEUR2_H
 
 #include <QObject>
+#include "libcapteur/bme280.h"
 
 class Capteur : public QObject
 {
@@ -11,9 +12,10 @@ class Capteur : public QObject
     Q_PROPERTY(qint32 humi READ humi  NOTIFY humiChanged)
 
 private:
-    qint32 m_temp =17;
-    qint32 m_pres =1000;
-    qint32 m_humi =50;
+    qint32 m_temp =0;
+    qint32 m_pres =0;
+    qint32 m_humi =0;
+    struct bme280_dev m_dev;
     
 signals:
     void tempChanged();
@@ -25,6 +27,7 @@ public slots:
 
 public:
     Capteur();
+    void initialisation();
     qint32 temp() const;
     qint32 pres() const;
     qint32 humi() const;

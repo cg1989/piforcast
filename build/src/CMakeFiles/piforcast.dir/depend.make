@@ -3,6 +3,9 @@
 
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: ../src/capteur2.cpp
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: ../src/capteur2.h
+src/CMakeFiles/piforcast.dir/capteur2.cpp.o: ../src/libcapteur/bme280.h
+src/CMakeFiles/piforcast.dir/capteur2.cpp.o: ../src/libcapteur/bme280_defs.h
+src/CMakeFiles/piforcast.dir/capteur2.cpp.o: ../src/sensors.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
@@ -70,7 +73,10 @@ src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/x86_64-linux-gnu/qt5/Q
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
 
 src/CMakeFiles/piforcast.dir/main.cpp.o: ../src/capteur2.h
+src/CMakeFiles/piforcast.dir/main.cpp.o: ../src/libcapteur/bme280.h
+src/CMakeFiles/piforcast.dir/main.cpp.o: ../src/libcapteur/bme280_defs.h
 src/CMakeFiles/piforcast.dir/main.cpp.o: ../src/main.cpp
+src/CMakeFiles/piforcast.dir/main.cpp.o: ../src/sensors.h
 src/CMakeFiles/piforcast.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 src/CMakeFiles/piforcast.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 src/CMakeFiles/piforcast.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -170,6 +176,8 @@ src/CMakeFiles/piforcast.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtQml
 src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o: src/piforcast_autogen/EWIEGA46WW/moc_capteur2.cpp
 src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o: src/piforcast_autogen/mocs_compilation.cpp
 src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o: ../src/capteur2.h
+src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o: ../src/libcapteur/bme280.h
+src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o: ../src/libcapteur/bme280_defs.h
 src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h

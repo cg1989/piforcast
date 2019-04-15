@@ -4,6 +4,9 @@
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o
  /home/cam/projects/piforcast/src/capteur2.cpp
  /home/cam/projects/piforcast/src/capteur2.h
+ /home/cam/projects/piforcast/src/libcapteur/bme280.h
+ /home/cam/projects/piforcast/src/libcapteur/bme280_defs.h
+ /home/cam/projects/piforcast/src/sensors.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
@@ -71,7 +74,10 @@ src/CMakeFiles/piforcast.dir/capteur2.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
 src/CMakeFiles/piforcast.dir/main.cpp.o
  /home/cam/projects/piforcast/src/capteur2.h
+ /home/cam/projects/piforcast/src/libcapteur/bme280.h
+ /home/cam/projects/piforcast/src/libcapteur/bme280_defs.h
  /home/cam/projects/piforcast/src/main.cpp
+ /home/cam/projects/piforcast/src/sensors.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -171,6 +177,8 @@ src/CMakeFiles/piforcast.dir/piforcast_autogen/mocs_compilation.cpp.o
  /home/cam/projects/piforcast/build/src/piforcast_autogen/EWIEGA46WW/moc_capteur2.cpp
  /home/cam/projects/piforcast/build/src/piforcast_autogen/mocs_compilation.cpp
  /home/cam/projects/piforcast/src/capteur2.h
+ /home/cam/projects/piforcast/src/libcapteur/bme280.h
+ /home/cam/projects/piforcast/src/libcapteur/bme280_defs.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h

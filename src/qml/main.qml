@@ -9,9 +9,6 @@ Window
     width: 800
     height: 600
     
-//     Capteur {
-//         id: capteur
-//     }
     
 
     
@@ -48,12 +45,16 @@ Window
         color: "white"
         //border.width: 1
         Text {
+            id: date
             text: "Sam 21 avril"
             color: "#000000"
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             font.pixelSize: (parent.height+parent.width)/10
-            font.family: "Manjari Bold"            
+            font.family: "Manjari Bold"
+//             function set() {
+//                 date.text = Date()
+//             }
         }
     }
     
@@ -109,7 +110,7 @@ Window
             }
             Text {
                 id: temperature
-                text: capteur.temp
+                text: sensor.temp
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -143,7 +144,7 @@ Window
             }
             Text {
                 id: pression
-                text: capteur.pres
+                text: sensor.pres
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -178,7 +179,7 @@ Window
             }
             Text {
                 id: humidity
-                text: capteur.humi
+                text: sensor.humi
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -237,16 +238,20 @@ Window
         }
     }
     
-//     function update() {
-//         var t = "<b>Température</b><br>%1°"
-// 		temperature.text = t.arg(capteur.temp)
-// 	}
-//     Timer {
-// 		id: globalTimer
-// 		interval: 1000
-// 		repeat: true
-// 		running: true
-// 		triggeredOnStart: true
-// 		onTriggered: update()
-// 	}
+    function update() {
+        capteur.refresh()
+        temperature.text = sensor.temp
+        pression.text = sensor.pres
+        humidity.text = sensor.humi
+    
+	}
+	
+    Timer {
+		id: globalTimer
+		interval: 1000
+		repeat: true
+		running: true
+		triggeredOnStart: true
+		onTriggered: update ()
+	}
 }
