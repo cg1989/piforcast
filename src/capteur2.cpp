@@ -2,7 +2,8 @@
 #include "sensors.h"
 #include "bme280.h"
 #include <iostream>
-//#include <QDebug>
+#include <cmath>
+
 
 using namespace std; 
 
@@ -13,14 +14,17 @@ Capteur::Capteur() {
 void Capteur::initialisation(){
     m_dev = init();
 }
-
+float convert (float pres,float temp){
+    float kelvin = temp + 273.15;
+    return 1013.25*pow(1-((0.0065 * 151)/kelvin),5.255);
+}
 void Capteur::refresh() {
-	//qDebug() << "Called the C++ slot";
+
     struct bme280_data data;
     data = stream_sensor_data_normal_mode(&m_dev);
     m_temp = data.temperature;
     m_humi = data.humidity;
-    m_pres = data.pressure;
+    m_pres = convert(data.pressure/100, m_temp);
 
 }
 

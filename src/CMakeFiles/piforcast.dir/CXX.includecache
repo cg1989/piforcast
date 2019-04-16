@@ -29,6 +29,8 @@ bme280.h
 /home/pi/projects/piforcast/src/bme280.h
 iostream
 -
+cmath
+-
 
 /home/pi/projects/piforcast/src/capteur2.h
 QObject

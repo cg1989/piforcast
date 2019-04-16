@@ -234,7 +234,7 @@ Window
         //var heure = "%1"
         sensor.refresh()
         temperature.text = t.arg(sensor.temp.toFixed(1))
-        pression.text = p.arg(Math.round(sensor.pres/100))
+        pression.text = p.arg(Math.round(sensor.pres))
         humidity.text = h.arg(sensor.humi.toFixed(1))
         heure.text = new Date().toLocaleTimeString(Qt.locale("fr_FR"),"hh:mm:ss")
     
