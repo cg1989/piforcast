@@ -1,11 +1,12 @@
 
- extern "C" {
+
+
 #include "sensors.h"
 
 
-#include "libcapteur/bme280.h"
+#include "bme280.h"
 #include <stdio.h>
-#include <unistd.h>
+#include <stdint.h>
 #include <wiringPi.h>
 #include <wiringPiSPI.h>
 
@@ -38,7 +39,7 @@ int8_t user_i2c_read(uint8_t id, uint8_t reg_addr, uint8_t *data, uint16_t len)
 int8_t user_i2c_write(uint8_t id, uint8_t reg_addr, uint8_t *data, uint16_t len)
 {
   int8_t *buf;
-  buf = malloc(len +1);
+  buf = (int8_t *)malloc(len +1);
   buf[0] = reg_addr;
   memcpy(buf +1, data, len);
   write(fd, buf, len +1);
@@ -54,7 +55,7 @@ struct bme280_dev initSensor()
   struct bme280_data comp_data;
   
   if ((fd = open(IIC_Dev, O_RDWR)) < 0) {
-    printf("Failed to open the i2c bus %s", argv[1]);
+    printf("Failed to open the i2c bus %s");
     exit(1);
   }
   if (ioctl(fd, I2C_SLAVE, 0x77) < 0) {
@@ -73,10 +74,10 @@ struct bme280_dev initSensor()
   //stream_sensor_data_forced_mode(&dev);
   	/* Recommended mode of operation: Indoor navigation */
     dev->settings.osr_h = BME280_OVERSAMPLING_1X;
-	dev->settings.osr_p = BME280_OVERSAMPLING_16X;
-	dev->settings.osr_t = BME280_OVERSAMPLING_2X;
-	dev->settings.filter = BME280_FILTER_COEFF_16;
-	dev->settings.standby_time = BME280_STANDBY_TIME_62_5_MS;
+	dev.settings.osr_p = BME280_OVERSAMPLING_16X;
+	dev.settings.osr_t = BME280_OVERSAMPLING_2X;
+	dev.settings.filter = BME280_FILTER_COEFF_16;
+	dev.settings.standby_time = BME280_STANDBY_TIME_62_5_MS;
 
 	settings_sel = BME280_OSR_PRESS_SEL;
 	settings_sel |= BME280_OSR_TEMP_SEL;
@@ -97,8 +98,6 @@ struct bme280_data stream_sensor_data_normal_mode(struct bme280_dev *dev)
     dev->delay_ms(100);
     rslt = bme280_get_sensor_data(BME280_ALL, &comp_data, dev);
 	return rslt;
-}
-
 }
 
 

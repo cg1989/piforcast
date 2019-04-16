@@ -3,7 +3,7 @@
 #include <QQmlContext>
 #include "capteur2.h"
 #include "sensors.h"
-#include "libcapteur/bme280.h"
+#include "bme280.h"
 
 int main(int argc, char *argv[])
 {
@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     Capteur sensor;
     sensor.initialisation();
     QQmlApplicationEngine engine;
-    engine.rootContext()->setContextProperty("capteur", &sensor);
+    engine.rootContext()->setContextProperty("sensor", &sensor);
     engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));
     
   

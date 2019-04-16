@@ -1,6 +1,6 @@
-/home/cam/projects/piforcast/CMakeFiles/rebuild_cache.dir
-/home/cam/projects/piforcast/CMakeFiles/edit_cache.dir
-/home/cam/projects/piforcast/src/CMakeFiles/rebuild_cache.dir
-/home/cam/projects/piforcast/src/CMakeFiles/piforcast.dir
-/home/cam/projects/piforcast/src/CMakeFiles/edit_cache.dir
-/home/cam/projects/piforcast/src/CMakeFiles/piforcast_autogen.dir
+/home/pi/projects/piforcast/CMakeFiles/rebuild_cache.dir
+/home/pi/projects/piforcast/CMakeFiles/edit_cache.dir
+/home/pi/projects/piforcast/src/CMakeFiles/rebuild_cache.dir
+/home/pi/projects/piforcast/src/CMakeFiles/edit_cache.dir
+/home/pi/projects/piforcast/src/CMakeFiles/piforcast.dir
+/home/pi/projects/piforcast/src/CMakeFiles/piforcast_automoc.dir

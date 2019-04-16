@@ -1,6 +1,5 @@
 import QtQuick 2.0
 import QtQuick.Window 2.0
-//import CapteurClass 1.0
 
 
 Window
@@ -52,9 +51,6 @@ Window
             anchors.verticalCenter: parent.verticalCenter
             font.pixelSize: (parent.height+parent.width)/10
             font.family: "Manjari Bold"
-//             function set() {
-//                 date.text = Date()
-//             }
         }
     }
     
@@ -81,16 +77,8 @@ Window
                 sourceSize.width: Math.min(parent.width/1.5,parent.height/1.5)
                 sourceSize.height: Math.min(parent.width/1.5,parent.height/1.5)
                 anchors.centerIn: parent
-                source:"Icons/rain.svg"
+                source:"rain.svg"
             }
-//             MouseArea {
-//                 anchors.fill: parent
-//                 onClicked: function() {
-//                     capture.refresh()
-//                  //   var t = "<b>Température</b><br>%1°"
-//                     console.log(t.arg(capteur.temp))
-//                 }
-//             }
         }
         
         //Temperature
@@ -110,7 +98,7 @@ Window
             }
             Text {
                 id: temperature
-                text: sensor.temp
+                text: qsTr("%1")
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -233,25 +221,29 @@ Window
                 sourceSize.width: Math.min(parent.width/2,parent.height/2)
                 sourceSize.height: Math.min(parent.width/2,parent.height/2)
                 anchors.centerIn: parent
-                source:"Icons/f.svg"
+                source:"f.svg"
             }
         }
     }
     
     function update() {
-        capteur.refresh()
-        temperature.text = sensor.temp
-        pression.text = sensor.pres
-        humidity.text = sensor.humi
+    	var t = "%1"
+        //var p = "<b>Pres</b><br>%1hPa"
+        //var h = "<b>Humi</b><br>%1%"
+        
+        temperature.text = t.arg(sensor.temp)
+        sensor.refresh()
+        //pression.text = sensor.pres
+        //humidity.text = sensor.humi
     
 	}
 	
     Timer {
 		id: globalTimer
-		interval: 1000
+		interval: 10000
 		repeat: true
 		running: true
 		triggeredOnStart: true
-		onTriggered: update ()
+		onTriggered: update()
 	}
 }
