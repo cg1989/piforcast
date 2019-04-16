@@ -26,7 +26,8 @@ Window
         height: parent.height/size.part
         color: "white"
         Text {
-            text: "16:02"
+            id:heure
+            text: qsTr("%1")
             color: "#000000"
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
@@ -45,7 +46,7 @@ Window
         //border.width: 1
         Text {
             id: date
-            text: "Sam 21 avril"
+            text: new Date().toLocaleDateString(Qt.locale("fr_FR"),"dddd d MMMM")
             color: "#000000"
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
@@ -132,7 +133,7 @@ Window
             }
             Text {
                 id: pression
-                text: sensor.pres
+                text: qsTr("%1")
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -167,7 +168,7 @@ Window
             }
             Text {
                 id: humidity
-                text: sensor.humi
+                text: qsTr("%1")
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -228,19 +229,20 @@ Window
     
     function update() {
     	var t = "%1"
-        //var p = "<b>Pres</b><br>%1hPa"
-        //var h = "<b>Humi</b><br>%1%"
-        
-        temperature.text = t.arg(sensor.temp)
+        var p = "%1"
+        var h = "%1"
+        //var heure = "%1"
         sensor.refresh()
-        //pression.text = sensor.pres
-        //humidity.text = sensor.humi
+        temperature.text = t.arg(sensor.temp.toFixed(1))
+        pression.text = p.arg(Math.round(sensor.pres/100))
+        humidity.text = h.arg(sensor.humi.toFixed(1))
+        heure.text = new Date().toLocaleTimeString(Qt.locale("fr_FR"),"hh:mm:ss")
     
 	}
 	
     Timer {
 		id: globalTimer
-		interval: 10000
+		interval: 1000
 		repeat: true
 		running: true
 		triggeredOnStart: true

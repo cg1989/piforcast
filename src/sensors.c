@@ -90,15 +90,9 @@ struct bme280_dev init()
 
 struct bme280_data stream_sensor_data_normal_mode(struct bme280_dev *dev)
 {
-   printf("Je suis rentré au début\n");
     int8_t rslt;
     struct bme280_data comp_data;
-
-    printf("Je suis rentré ici\n");
     rslt = bme280_get_sensor_data(BME280_ALL, &comp_data, dev);
-    
-    
-    printf("OK! %lf rslt: %d\n", comp_data.humidity,rslt);
     
     return comp_data;
 	
