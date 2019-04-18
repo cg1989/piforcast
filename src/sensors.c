@@ -7,8 +7,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdint.h>
-#include <wiringPi.h>
-#include <wiringPiSPI.h>
+//#include <wiringPi.h>
 
 //Default write it to the register in one time
 #define USESPISINGLEREADWRITE 0 

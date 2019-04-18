@@ -3,7 +3,7 @@
 #include "bme280.h"
 #include <iostream>
 #include <cmath>
-
+#include <vector>
 
 using namespace std; 
 
@@ -14,20 +14,56 @@ Capteur::Capteur() {
 void Capteur::initialisation(){
     m_dev = init();
 }
-float convert (float pres,float temp){
-    float kelvin = temp + 273.15;
-    return 1013.25*pow(1-((0.0065 * 151)/kelvin),5.255);
-}
-void Capteur::refresh() {
 
+qreal convert_pres(qreal pres, qreal alt,qreal temp){
+    qreal kelvin = temp + 273.15;
+    return pres+1013.25*(1-pow((kelvin-0.0065*alt)/kelvin,5.255));
+
+}
+
+int tendance(vector<qreal> vec){
+    int tend = 0;
+    if (vec.size() != 0){
+        if(vec.size() == 60){
+            vec.erase(vec.begin());
+        }
+        qreal tmp = vec.front() - vec.back();
+        if(tmp > 0.5){
+            tend = 1;
+        }else if(tmp < -0.5){
+            tend = -1;
+        }else{
+            tend = 0;
+        }
+        //cout << tend << endl;
+        return tend;
+    }
+}
+
+//refresh
+void Capteur::refresh() {
+    
     struct bme280_data data;
     data = stream_sensor_data_normal_mode(&m_dev);
     m_temp = data.temperature;
     m_humi = data.humidity;
-    m_pres = convert(data.pressure/100, m_temp);
-
+    m_pres = convert_pres(data.pressure/100,151, m_temp);
+    
+    if (count < 60){
+        sum_pres = sum_pres + m_pres;
+    }else{
+        m_pres_min = sum_pres/60;
+        count=0;
+        sum_pres=m_pres;
+        pres_heure.push_back(m_pres_min);
+        m_tend = tendance(pres_heure);
+        cout << pres_heure.back() <<" "<< pres_heure.size()<< " "<< m_tend <<endl;
+    }
+    count++;
+    
+    
 }
-
+//
 
 //méthode pour température
 qreal Capteur::temp() const
@@ -48,5 +84,12 @@ qreal Capteur::humi() const
 {
     return m_humi;
 }
+
+//méthode pour tendence
+int Capteur::tend() const
+{
+    return m_tend;
+}
+
 
 

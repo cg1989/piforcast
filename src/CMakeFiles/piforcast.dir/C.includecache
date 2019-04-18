@@ -35,10 +35,6 @@ unistd.h
 -
 stdint.h
 -
-wiringPi.h
--
-wiringPiSPI.h
--
 string.h
 -
 stdlib.h

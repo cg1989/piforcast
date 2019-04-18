@@ -38,7 +38,7 @@ Window
     
     //Date
     Rectangle {
-        x: (size.part-size.offset_date)*(parent.width/size.part)
+        x: (size.part-size.offset_date-0.5)*(parent.width/size.part)
         y: (size.part-1)*(parent.height/size.part)
         width: size.offset_date*parent.width/size.part
         height: parent.height/size.part
@@ -46,9 +46,10 @@ Window
         //border.width: 1
         Text {
             id: date
-            text: new Date().toLocaleDateString(Qt.locale("fr_FR"),"dddd d MMMM")
+            text: qsTr("%1")
             color: "#000000"
-            anchors.horizontalCenter: parent.horizontalCenter
+            //anchors.horizontalCenter: parent.horizontalCenter
+            anchors.right: parent.right
             anchors.verticalCenter: parent.verticalCenter
             font.pixelSize: (parent.height+parent.width)/10
             font.family: "Manjari Bold"
@@ -222,7 +223,7 @@ Window
                 sourceSize.width: Math.min(parent.width/2,parent.height/2)
                 sourceSize.height: Math.min(parent.width/2,parent.height/2)
                 anchors.centerIn: parent
-                source:"f.svg"
+                source:"baisse.svg"
             }
         }
     }
@@ -231,13 +232,14 @@ Window
     	var t = "%1"
         var p = "%1"
         var h = "%1"
-        //var heure = "%1"
+  
         sensor.refresh()
         temperature.text = t.arg(sensor.temp.toFixed(1))
         pression.text = p.arg(Math.round(sensor.pres))
-        humidity.text = h.arg(sensor.humi.toFixed(1))
+        humidity.text = h.arg(sensor.humi.toFixed(0))
         heure.text = new Date().toLocaleTimeString(Qt.locale("fr_FR"),"hh:mm:ss")
-    
+        date.text = new Date().toLocaleDateString(Qt.locale("fr_FR"),"dddd d MMMM")
+        
 	}
 	
     Timer {

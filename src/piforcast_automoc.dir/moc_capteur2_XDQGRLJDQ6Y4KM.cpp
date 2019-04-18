@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_Capteur_t {
-    QByteArrayData data[9];
-    char stringdata0[68];
+    QByteArrayData data[11];
+    char stringdata0[85];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -34,14 +34,17 @@ QT_MOC_LITERAL(1, 8, 11), // "tempChanged"
 QT_MOC_LITERAL(2, 20, 0), // ""
 QT_MOC_LITERAL(3, 21, 11), // "presChanged"
 QT_MOC_LITERAL(4, 33, 11), // "humiChanged"
-QT_MOC_LITERAL(5, 45, 7), // "refresh"
-QT_MOC_LITERAL(6, 53, 4), // "temp"
-QT_MOC_LITERAL(7, 58, 4), // "pres"
-QT_MOC_LITERAL(8, 63, 4) // "humi"
+QT_MOC_LITERAL(5, 45, 11), // "tendChanged"
+QT_MOC_LITERAL(6, 57, 7), // "refresh"
+QT_MOC_LITERAL(7, 65, 4), // "temp"
+QT_MOC_LITERAL(8, 70, 4), // "pres"
+QT_MOC_LITERAL(9, 75, 4), // "humi"
+QT_MOC_LITERAL(10, 80, 4) // "tend"
 
     },
     "Capteur\0tempChanged\0\0presChanged\0"
-    "humiChanged\0refresh\0temp\0pres\0humi"
+    "humiChanged\0tendChanged\0refresh\0temp\0"
+    "pres\0humi\0tend"
 };
 #undef QT_MOC_LITERAL
 
@@ -51,22 +54,24 @@ static const uint qt_meta_data_Capteur[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
-       3,   38, // properties
+       5,   14, // methods
+       4,   44, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       3,       // signalCount
+       4,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,   34,    2, 0x06 /* Public */,
-       3,    0,   35,    2, 0x06 /* Public */,
-       4,    0,   36,    2, 0x06 /* Public */,
+       1,    0,   39,    2, 0x06 /* Public */,
+       3,    0,   40,    2, 0x06 /* Public */,
+       4,    0,   41,    2, 0x06 /* Public */,
+       5,    0,   42,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       5,    0,   37,    2, 0x0a /* Public */,
+       6,    0,   43,    2, 0x0a /* Public */,
 
  // signals: parameters
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -75,14 +80,16 @@ static const uint qt_meta_data_Capteur[] = {
     QMetaType::Void,
 
  // properties: name, type, flags
-       6, QMetaType::QReal, 0x00495001,
        7, QMetaType::QReal, 0x00495001,
        8, QMetaType::QReal, 0x00495001,
+       9, QMetaType::QReal, 0x00495001,
+      10, QMetaType::QReal, 0x00495001,
 
  // properties: notify_signal_id
        0,
        1,
        2,
+       3,
 
        0        // eod
 };
@@ -96,7 +103,8 @@ void Capteur::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         case 0: _t->tempChanged(); break;
         case 1: _t->presChanged(); break;
         case 2: _t->humiChanged(); break;
-        case 3: _t->refresh(); break;
+        case 3: _t->tendChanged(); break;
+        case 4: _t->refresh(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -123,6 +131,13 @@ void Capteur::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
                 return;
             }
         }
+        {
+            typedef void (Capteur::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&Capteur::tendChanged)) {
+                *result = 3;
+                return;
+            }
+        }
     }
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
@@ -133,6 +148,7 @@ void Capteur::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         case 0: *reinterpret_cast< qreal*>(_v) = _t->temp(); break;
         case 1: *reinterpret_cast< qreal*>(_v) = _t->pres(); break;
         case 2: *reinterpret_cast< qreal*>(_v) = _t->humi(); break;
+        case 3: *reinterpret_cast< qreal*>(_v) = _t->tend(); break;
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
@@ -167,29 +183,29 @@ int Capteur::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 5)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 4;
+        _id -= 5;
     }
 #ifndef QT_NO_PROPERTIES
    else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     } else if (_c == QMetaObject::QueryPropertyDesignable) {
-        _id -= 3;
+        _id -= 4;
     } else if (_c == QMetaObject::QueryPropertyScriptable) {
-        _id -= 3;
+        _id -= 4;
     } else if (_c == QMetaObject::QueryPropertyStored) {
-        _id -= 3;
+        _id -= 4;
     } else if (_c == QMetaObject::QueryPropertyEditable) {
-        _id -= 3;
+        _id -= 4;
     } else if (_c == QMetaObject::QueryPropertyUser) {
-        _id -= 3;
+        _id -= 4;
     }
 #endif // QT_NO_PROPERTIES
     return _id;
@@ -211,5 +227,11 @@ void Capteur::presChanged()
 void Capteur::humiChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 2, Q_NULLPTR);
+}
+
+// SIGNAL 3
+void Capteur::tendChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 3, Q_NULLPTR);
 }
 QT_END_MOC_NAMESPACE
