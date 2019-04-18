@@ -223,7 +223,7 @@ Window
                 sourceSize.width: Math.min(parent.width/2,parent.height/2)
                 sourceSize.height: Math.min(parent.width/2,parent.height/2)
                 anchors.centerIn: parent
-                source:"baisse.svg"
+                source:"0.svg"
             }
         }
     }
