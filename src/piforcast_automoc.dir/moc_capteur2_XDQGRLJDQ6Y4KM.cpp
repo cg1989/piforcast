@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_Capteur_t {
-    QByteArrayData data[11];
-    char stringdata0[85];
+    QByteArrayData data[15];
+    char stringdata0[119];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,16 +35,21 @@ QT_MOC_LITERAL(2, 20, 0), // ""
 QT_MOC_LITERAL(3, 21, 11), // "presChanged"
 QT_MOC_LITERAL(4, 33, 11), // "humiChanged"
 QT_MOC_LITERAL(5, 45, 11), // "tendChanged"
-QT_MOC_LITERAL(6, 57, 7), // "refresh"
-QT_MOC_LITERAL(7, 65, 4), // "temp"
-QT_MOC_LITERAL(8, 70, 4), // "pres"
-QT_MOC_LITERAL(9, 75, 4), // "humi"
-QT_MOC_LITERAL(10, 80, 4) // "tend"
+QT_MOC_LITERAL(6, 57, 10), // "desChanged"
+QT_MOC_LITERAL(7, 68, 12), // "imageChanged"
+QT_MOC_LITERAL(8, 81, 7), // "refresh"
+QT_MOC_LITERAL(9, 89, 4), // "temp"
+QT_MOC_LITERAL(10, 94, 4), // "pres"
+QT_MOC_LITERAL(11, 99, 4), // "humi"
+QT_MOC_LITERAL(12, 104, 4), // "tend"
+QT_MOC_LITERAL(13, 109, 3), // "des"
+QT_MOC_LITERAL(14, 113, 5) // "image"
 
     },
     "Capteur\0tempChanged\0\0presChanged\0"
-    "humiChanged\0tendChanged\0refresh\0temp\0"
-    "pres\0humi\0tend"
+    "humiChanged\0tendChanged\0desChanged\0"
+    "imageChanged\0refresh\0temp\0pres\0humi\0"
+    "tend\0des\0image"
 };
 #undef QT_MOC_LITERAL
 
@@ -54,23 +59,27 @@ static const uint qt_meta_data_Capteur[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   14, // methods
-       4,   44, // properties
+       7,   14, // methods
+       6,   56, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       4,       // signalCount
+       6,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,   39,    2, 0x06 /* Public */,
-       3,    0,   40,    2, 0x06 /* Public */,
-       4,    0,   41,    2, 0x06 /* Public */,
-       5,    0,   42,    2, 0x06 /* Public */,
+       1,    0,   49,    2, 0x06 /* Public */,
+       3,    0,   50,    2, 0x06 /* Public */,
+       4,    0,   51,    2, 0x06 /* Public */,
+       5,    0,   52,    2, 0x06 /* Public */,
+       6,    0,   53,    2, 0x06 /* Public */,
+       7,    0,   54,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       6,    0,   43,    2, 0x0a /* Public */,
+       8,    0,   55,    2, 0x0a /* Public */,
 
  // signals: parameters
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -80,16 +89,20 @@ static const uint qt_meta_data_Capteur[] = {
     QMetaType::Void,
 
  // properties: name, type, flags
-       7, QMetaType::QReal, 0x00495001,
-       8, QMetaType::QReal, 0x00495001,
        9, QMetaType::QReal, 0x00495001,
       10, QMetaType::QReal, 0x00495001,
+      11, QMetaType::QReal, 0x00495001,
+      12, QMetaType::QReal, 0x00495001,
+      13, QMetaType::QString, 0x00495001,
+      14, QMetaType::QString, 0x00495001,
 
  // properties: notify_signal_id
        0,
        1,
        2,
        3,
+       4,
+       5,
 
        0        // eod
 };
@@ -104,7 +117,9 @@ void Capteur::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         case 1: _t->presChanged(); break;
         case 2: _t->humiChanged(); break;
         case 3: _t->tendChanged(); break;
-        case 4: _t->refresh(); break;
+        case 4: _t->desChanged(); break;
+        case 5: _t->imageChanged(); break;
+        case 6: _t->refresh(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -138,6 +153,20 @@ void Capteur::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
                 return;
             }
         }
+        {
+            typedef void (Capteur::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&Capteur::desChanged)) {
+                *result = 4;
+                return;
+            }
+        }
+        {
+            typedef void (Capteur::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&Capteur::imageChanged)) {
+                *result = 5;
+                return;
+            }
+        }
     }
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
@@ -149,6 +178,8 @@ void Capteur::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         case 1: *reinterpret_cast< qreal*>(_v) = _t->pres(); break;
         case 2: *reinterpret_cast< qreal*>(_v) = _t->humi(); break;
         case 3: *reinterpret_cast< qreal*>(_v) = _t->tend(); break;
+        case 4: *reinterpret_cast< QString*>(_v) = _t->des(); break;
+        case 5: *reinterpret_cast< QString*>(_v) = _t->image(); break;
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
@@ -183,29 +214,29 @@ int Capteur::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 7)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 7;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 7)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 5;
+        _id -= 7;
     }
 #ifndef QT_NO_PROPERTIES
    else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 6;
     } else if (_c == QMetaObject::QueryPropertyDesignable) {
-        _id -= 4;
+        _id -= 6;
     } else if (_c == QMetaObject::QueryPropertyScriptable) {
-        _id -= 4;
+        _id -= 6;
     } else if (_c == QMetaObject::QueryPropertyStored) {
-        _id -= 4;
+        _id -= 6;
     } else if (_c == QMetaObject::QueryPropertyEditable) {
-        _id -= 4;
+        _id -= 6;
     } else if (_c == QMetaObject::QueryPropertyUser) {
-        _id -= 4;
+        _id -= 6;
     }
 #endif // QT_NO_PROPERTIES
     return _id;
@@ -233,5 +264,17 @@ void Capteur::humiChanged()
 void Capteur::tendChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 3, Q_NULLPTR);
+}
+
+// SIGNAL 4
+void Capteur::desChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 4, Q_NULLPTR);
+}
+
+// SIGNAL 5
+void Capteur::imageChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 5, Q_NULLPTR);
 }
 QT_END_MOC_NAMESPACE

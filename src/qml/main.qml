@@ -212,7 +212,8 @@ Window
             height: parent.height/3
             color: "white"
             Text {
-                text: "Tendance"
+                id:tendance
+                text: qsTr("%1")
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 font.family: "AnjaliOldLipi"
@@ -233,6 +234,8 @@ Window
         var p = "%1"
         var h = "%1"
         var i = "%1.svg"
+        var img = "%1.svg"
+        var des = "%1"
         sensor.refresh()
         temperature.text = t.arg(sensor.temp.toFixed(1))
         pression.text = p.arg(Math.round(sensor.pres))
@@ -240,6 +243,7 @@ Window
         trend.source = i.arg(sensor.tend)
         heure.text = new Date().toLocaleTimeString(Qt.locale("fr_FR"),"hh:mm:ss")
         date.text = new Date().toLocaleDateString(Qt.locale("fr_FR"),"dddd d MMMM")
+        tendance.text = des.arg(sensor.des)
         
 	}
 	

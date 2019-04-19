@@ -33,16 +33,24 @@ cmath
 -
 vector
 -
+utility
+-
+QString
+-
 
 /home/pi/projects/piforcast/src/capteur2.h
 QObject
 -
 vector
 -
+utility
+-
 bme280.h
 /home/pi/projects/piforcast/src/bme280.h
 sensors.h
 /home/pi/projects/piforcast/src/sensors.h
+QString
+-
 
 /home/pi/projects/piforcast/src/main.cpp
 QGuiApplication
@@ -83,6 +91,10 @@ stdint.h
 /usr/include/arm-linux-gnueabihf/qt5/QtCore/QObject
 qobject.h
 /usr/include/arm-linux-gnueabihf/qt5/QtCore/qobject.h
+
+/usr/include/arm-linux-gnueabihf/qt5/QtCore/QString
+qstring.h
+/usr/include/arm-linux-gnueabihf/qt5/QtCore/qstring.h
 
 /usr/include/arm-linux-gnueabihf/qt5/QtCore/qalgorithms.h
 QtCore/qglobal.h

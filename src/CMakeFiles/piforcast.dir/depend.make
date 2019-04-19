@@ -16,6 +16,7 @@ src/CMakeFiles/piforcast.dir/capteur2.cpp.o: src/capteur2.cpp
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: src/capteur2.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: src/sensors.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/QObject
+src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/QString
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qalgorithms.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qarraydata.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qatomic.h
@@ -70,6 +71,7 @@ src/CMakeFiles/piforcast.dir/main.cpp.o: src/capteur2.h
 src/CMakeFiles/piforcast.dir/main.cpp.o: src/main.cpp
 src/CMakeFiles/piforcast.dir/main.cpp.o: src/sensors.h
 src/CMakeFiles/piforcast.dir/main.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/QObject
+src/CMakeFiles/piforcast.dir/main.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/QString
 src/CMakeFiles/piforcast.dir/main.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qalgorithms.h
 src/CMakeFiles/piforcast.dir/main.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qarraydata.h
 src/CMakeFiles/piforcast.dir/main.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qatomic.h
@@ -165,6 +167,7 @@ src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.o: src/piforcast_automoc.cpp
 src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.o: src/piforcast_automoc.dir/moc_capteur2_XDQGRLJDQ6Y4KM.cpp
 src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.o: src/sensors.h
 src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/QObject
+src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/QString
 src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qalgorithms.h
 src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qarraydata.h
 src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qatomic.h

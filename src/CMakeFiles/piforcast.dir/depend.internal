@@ -17,6 +17,7 @@ src/CMakeFiles/piforcast.dir/capteur2.cpp.o
  /home/pi/projects/piforcast/src/capteur2.h
  /home/pi/projects/piforcast/src/sensors.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/QObject
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/QString
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qalgorithms.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qarraydata.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qatomic.h
@@ -71,6 +72,7 @@ src/CMakeFiles/piforcast.dir/main.cpp.o
  /home/pi/projects/piforcast/src/main.cpp
  /home/pi/projects/piforcast/src/sensors.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/QObject
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/QString
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qalgorithms.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qarraydata.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qatomic.h
@@ -166,6 +168,7 @@ src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.o
  /home/pi/projects/piforcast/src/piforcast_automoc.dir/moc_capteur2_XDQGRLJDQ6Y4KM.cpp
  /home/pi/projects/piforcast/src/sensors.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/QObject
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/QString
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qalgorithms.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qarraydata.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qatomic.h
