@@ -59,7 +59,9 @@ include src/CMakeFiles/piforcast.dir/flags.make
 
 src/qrc_resources.cpp: src/qml/main.qml
 src/qrc_resources.cpp: src/qml/rain.svg
-src/qrc_resources.cpp: src/qml/baisse.svg
+src/qrc_resources.cpp: src/qml/0.svg
+src/qrc_resources.cpp: src/qml/-1.svg
+src/qrc_resources.cpp: src/qml/1.svg
 src/qrc_resources.cpp: src/resources.qrc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/projects/piforcast/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating qrc_resources.cpp"
 	cd /home/pi/projects/piforcast/src && /usr/lib/arm-linux-gnueabihf/qt5/bin/rcc --name resources --output /home/pi/projects/piforcast/src/qrc_resources.cpp /home/pi/projects/piforcast/src/resources.qrc

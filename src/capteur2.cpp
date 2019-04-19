@@ -20,17 +20,14 @@ qreal convert_pres(qreal pres, qreal alt,qreal temp){
     return pres+1013.25*(1-pow((kelvin-0.0065*alt)/kelvin,5.255));
 
 }
-
-int tendance(vector<qreal> vec){
+// A mettre en méthode
+int Capteur::tendance(vector<qreal>  vec){
     int tend = 0;
     if (vec.size() != 0){
-        if(vec.size() == 60){
-            vec.erase(vec.begin());
-        }
         qreal tmp = vec.front() - vec.back();
-        if(tmp > 0.5){
+        if(tmp > 0.3){
             tend = 1;
-        }else if(tmp < -0.5){
+        }else if(tmp < -0.3){
             tend = -1;
         }else{
             tend = 0;
@@ -56,7 +53,11 @@ void Capteur::refresh() {
         count=0;
         sum_pres=m_pres;
         pres_heure.push_back(m_pres_min);
-        m_tend = tendance(pres_heure);
+        m_tend = Capteur::tendance( pres_heure);
+                if(pres_heure.size() > 59){
+            pres_heure.erase(pres_heure.begin());
+            //cout << "supr 1: ";
+        }
         cout << pres_heure.back() <<" "<< pres_heure.size()<< " "<< m_tend <<endl;
     }
     count++;

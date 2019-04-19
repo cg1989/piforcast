@@ -220,10 +220,10 @@ Window
                 font.pixelSize: (parent.height+parent.width/2)/15
             }
             Image{
+            id:trend
                 sourceSize.width: Math.min(parent.width/2,parent.height/2)
                 sourceSize.height: Math.min(parent.width/2,parent.height/2)
                 anchors.centerIn: parent
-                source:"0.svg"
             }
         }
     }
@@ -232,11 +232,12 @@ Window
     	var t = "%1"
         var p = "%1"
         var h = "%1"
-  
+        var i = "%1.svg"
         sensor.refresh()
         temperature.text = t.arg(sensor.temp.toFixed(1))
         pression.text = p.arg(Math.round(sensor.pres))
         humidity.text = h.arg(sensor.humi.toFixed(0))
+        trend.source = i.arg(sensor.tend)
         heure.text = new Date().toLocaleTimeString(Qt.locale("fr_FR"),"hh:mm:ss")
         date.text = new Date().toLocaleDateString(Qt.locale("fr_FR"),"dddd d MMMM")
         

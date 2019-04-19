@@ -2,6 +2,8 @@
  <qresource>
     <file>qml/main.qml</file>
     <file>qml/rain.svg</file>
-    <file>qml/baisse.svg</file>
+    <file>qml/0.svg</file>
+    <file>qml/-1.svg</file>
+    <file>qml/1.svg</file>
  </qresource>
 </RCC>

@@ -21,7 +21,7 @@ private:
     int count = 0;
     qreal sum_pres = 0;
     vector<qreal> pres_heure;
-    int m_tend;
+    int m_tend = 0;
     
     qreal m_temp;
     qreal m_pres;
@@ -42,6 +42,7 @@ public slots:
 public:
     Capteur();
     void initialisation();
+    int tendance(vector<qreal> vec);
     qreal temp() const;
     qreal pres() const;
     qreal humi() const;
