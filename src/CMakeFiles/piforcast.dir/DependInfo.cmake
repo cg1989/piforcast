@@ -1,12 +1,38 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/pi/Downloads/piforcast-master/src/bme280.c" "/home/pi/Downloads/piforcast-master/src/CMakeFiles/piforcast.dir/bme280.c.o"
+  "/home/pi/Downloads/piforcast-master/src/sensors.c" "/home/pi/Downloads/piforcast-master/src/CMakeFiles/piforcast.dir/sensors.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "QT_CORE_LIB"
+  "QT_GUI_LIB"
+  "QT_NETWORK_LIB"
+  "QT_NO_DEBUG"
+  "QT_QML_LIB"
+  )
+
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/include/arm-linux-gnueabihf/qt5"
+  "/usr/include/arm-linux-gnueabihf/qt5/QtQml"
+  "/usr/include/arm-linux-gnueabihf/qt5/QtNetwork"
+  "/usr/include/arm-linux-gnueabihf/qt5/QtCore"
+  "/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++"
+  "/usr/include/arm-linux-gnueabihf/qt5/QtGui"
+  )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/projects/piforcast/src/main.cpp" "/home/pi/projects/piforcast/src/CMakeFiles/piforcast.dir/main.cpp.o"
-  "/home/pi/projects/piforcast/src/piforcast_automoc.cpp" "/home/pi/projects/piforcast/src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.o"
-  "/home/pi/projects/piforcast/src/qrc_resources.cpp" "/home/pi/projects/piforcast/src/CMakeFiles/piforcast.dir/qrc_resources.cpp.o"
+  "/home/pi/Downloads/piforcast-master/src/capteur2.cpp" "/home/pi/Downloads/piforcast-master/src/CMakeFiles/piforcast.dir/capteur2.cpp.o"
+  "/home/pi/Downloads/piforcast-master/src/main.cpp" "/home/pi/Downloads/piforcast-master/src/CMakeFiles/piforcast.dir/main.cpp.o"
+  "/home/pi/Downloads/piforcast-master/src/piforcast_automoc.cpp" "/home/pi/Downloads/piforcast-master/src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.o"
+  "/home/pi/Downloads/piforcast-master/src/qrc_resources.cpp" "/home/pi/Downloads/piforcast-master/src/CMakeFiles/piforcast.dir/qrc_resources.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

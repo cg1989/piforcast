@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/projects/piforcast
+CMAKE_SOURCE_DIR = /home/pi/Downloads/piforcast-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/projects/piforcast
+CMAKE_BINARY_DIR = /home/pi/Downloads/piforcast-master
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/projects/piforcast/CMakeFiles /home/pi/projects/piforcast/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Downloads/piforcast-master/CMakeFiles /home/pi/Downloads/piforcast-master/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/projects/piforcast/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Downloads/piforcast-master/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/projects/piforcast
+CMAKE_SOURCE_DIR = /home/pi/Downloads/piforcast-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/projects/piforcast
+CMAKE_BINARY_DIR = /home/pi/Downloads/piforcast-master
 
 # Utility rule file for piforcast_automoc.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/pi/projects/piforcast
 include src/CMakeFiles/piforcast_automoc.dir/progress.make
 
 src/CMakeFiles/piforcast_automoc:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/projects/piforcast/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic moc for target piforcast"
-	cd /home/pi/projects/piforcast/src && /usr/bin/cmake -E cmake_autogen /home/pi/projects/piforcast/src/CMakeFiles/piforcast_automoc.dir/ ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/Downloads/piforcast-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic moc for target piforcast"
+	cd /home/pi/Downloads/piforcast-master/src && /usr/bin/cmake -E cmake_autogen /home/pi/Downloads/piforcast-master/src/CMakeFiles/piforcast_automoc.dir/ ""
 
 piforcast_automoc: src/CMakeFiles/piforcast_automoc
 piforcast_automoc: src/CMakeFiles/piforcast_automoc.dir/build.make
@@ -68,10 +68,10 @@ src/CMakeFiles/piforcast_automoc.dir/build: piforcast_automoc
 .PHONY : src/CMakeFiles/piforcast_automoc.dir/build
 
 src/CMakeFiles/piforcast_automoc.dir/clean:
-	cd /home/pi/projects/piforcast/src && $(CMAKE_COMMAND) -P CMakeFiles/piforcast_automoc.dir/cmake_clean.cmake
+	cd /home/pi/Downloads/piforcast-master/src && $(CMAKE_COMMAND) -P CMakeFiles/piforcast_automoc.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/piforcast_automoc.dir/clean
 
 src/CMakeFiles/piforcast_automoc.dir/depend:
-	cd /home/pi/projects/piforcast && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/projects/piforcast /home/pi/projects/piforcast/src /home/pi/projects/piforcast /home/pi/projects/piforcast/src /home/pi/projects/piforcast/src/CMakeFiles/piforcast_automoc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/Downloads/piforcast-master && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Downloads/piforcast-master /home/pi/Downloads/piforcast-master/src /home/pi/Downloads/piforcast-master /home/pi/Downloads/piforcast-master/src /home/pi/Downloads/piforcast-master/src/CMakeFiles/piforcast_automoc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/piforcast_automoc.dir/depend
 
