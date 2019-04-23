@@ -6,6 +6,8 @@
 #include <vector>
 #include <utility>
 #include <QString>
+#include <QDebug>
+#include <QPainter>
 
 using namespace std; 
 
@@ -56,7 +58,7 @@ void Capteur::refresh() {
         sum_pres=m_pres;
         pres_heure.push_back(m_pres_min);
         m_tend = Capteur::tendance( pres_heure);
-                if(pres_heure.size() > 59){
+                if(pres_heure.size() > 60){
             pres_heure.erase(pres_heure.begin());
         }
         cout << pres_heure.back() <<" "<< pres_heure.size()<< " "<< m_tend <<endl;
@@ -64,9 +66,9 @@ void Capteur::refresh() {
     count++;
     
     int zambretti = calc_zam(m_tend,m_pres);
-    m_image = image_zam(zambretti);
-    m_des = descrip_zam(zambretti);
-    //cout << zambretti << " "<< descrip_zam(zambretti) << endl;
+    m_image = image_zam(zambretti-1);
+    m_des = descrip_zam(zambretti-1);
+    //qDebug() << m_image <<" "<< m_des <<" "<< zambretti;
     
     
 }
@@ -116,26 +118,30 @@ int Capteur::calc_zam(int tend, qreal m_pres) {
 
 
 QString Capteur::descrip_zam(int Z) {
+    //Z++;
 	std::vector<QString> res = {
-		"Settled fine", "Fine weather", "Becoming fine", "Fine, becoming less settled", "Fine, possible showers", "Fairly fine, improving", "Fairly fine, possible showers early", "Fairly fine, showery later", "Showery early, improving", "Changeable, mending", "Fairly fine, showers likely", "Rather unsettled clearing later", "Unsettled, probably improving", "Showery, bright intervals", "Showery, becoming less settled", "Changeable, some rain", "Unsettled, short fine intervals", "Unsettled, rain later", "Unsettled, some rain", "Mostly very unsettled", "Occasional rain, worsening", "Rain at times, very unsettled", "Rain at frequent intervals", "Rain, very unsettled", "Stormy, may improve", "Stormy, much rain"};
-	return res[Z-1];
+		"Beau temps, calme",                    "Beau fixe",
+        "S'améliorant vers beau temps",         "Beau, se dégradant légérement",
+        "Beau, averses possible",               "Assez beau, s'améliorant",
+        "Assez beau, averses prochaines",       "Assez beau, se dégradant en averses",
+        "Averses, s'améliorant",                "Changeant, nuageux",
+        "Averses probable",                     "Nuageux pouvant s'améliorer",
+        "Nuageux s'améliorant",                 "Averses, brèves éclaircies"
+        "Averses, se dégradant",                "Changeant, pluie possible",
+        "Incertain, brèves éclaircies",         "Nuageux, pluie à venir",
+        "Nuageux, petite pluie",                "Très nuageux, incertain",
+        "Pluies occasionnelles se détériorant", "Pluies, très nuageux",
+        "Pluies",                               "Pluies, très nuageux",
+        "Tempêtueux, pouvant s'améliorer",      "Tempétueux, beaucoup de pluie"};
+	return res[Z];
 }
+
 QString Capteur::image_zam(int Z) {
 	std::vector<QString> res = {
-		"Soleil",	 				"Soleil", 
-		"Sun-Low", 				"Sun-Low", 
-		"Cloud-Drizzle-Sun-Alt", 		"Cloud-Drizzle-Sun-Alt",
-		"Cloud-Drizzle-Sun",			"Cloud-Drizzle-Sun", 
-		"Cloud-Drizzle-Sun-Alt",	 	"Cloud-Sun",
-		"Cloud-Drizzle-Sun-Alt",		"Cloud-Sun",
-		"Cloud-Sun",				"Cloud-Drizzle-Sun",
-		"Cloud-Drizzle-Alt",			"Cloud-Drizzle",
-		"Cloud-Sun",				"Cloud-Drizzle-Alt",
-		"Cloud-Drizzle-Alt",			"Cloud",
-		"Cloud-Drizzle",			"Cloud-Drizzle",
-		"Cloud-Drizzle",			"Cloud-Drizzle",
-		"Cloud-Lightning-Sun",			"Cloud-Lightning"};
-	return res[Z-1];
+		"soleil","soleil","peunuageux","peunuageux","averses","peunuageux","averses","averses","aversesfortes","eclaircies",
+		"aversesfortes","eclaircies","eclaircies","aversesfortes","aversesfortes","changeant","eclaircies","averses","petitepluie","nuageux",
+		"petitepluie","pluie","pluie","pluie","orage","orage"};
+	return res[Z];
 }
 
 //méthode pour température
