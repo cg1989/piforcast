@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/piforcast.dir/main.cpp.o CMakeFiles/piforcast.dir/qrc_resources.cpp.o CMakeFiles/piforcast.dir/piforcast_automoc.cpp.o  -o piforcast -rdynamic /usr/lib/arm-linux-gnueabihf/libQt5Qml.so.5.7.1 /usr/lib/arm-linux-gnueabihf/libQt5Gui.so.5.7.1 /usr/lib/arm-linux-gnueabihf/libQt5Network.so.5.7.1 /usr/lib/arm-linux-gnueabihf/libQt5Core.so.5.7.1 
