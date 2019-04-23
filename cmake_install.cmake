@@ -1,4 +1,4 @@
-# Install script for directory: /home/pi/Downloads/piforcast-master
+# Install script for directory: /home/pi/projects/piforcast
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/pi/Downloads/piforcast-master/src/cmake_install.cmake")
+  include("/home/pi/projects/piforcast/src/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pi/Downloads/piforcast-master/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pi/projects/piforcast/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Downloads/piforcast-master
+CMAKE_SOURCE_DIR = /home/pi/projects/piforcast
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Downloads/piforcast-master
+CMAKE_BINARY_DIR = /home/pi/projects/piforcast
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pi/Downloads/piforcast-master && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Downloads/piforcast-master/CMakeFiles /home/pi/Downloads/piforcast-master/src/CMakeFiles/progress.marks
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Downloads/piforcast-master/CMakeFiles 0
+	cd /home/pi/projects/piforcast && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/projects/piforcast/CMakeFiles /home/pi/projects/piforcast/src/CMakeFiles/progress.marks
+	cd /home/pi/projects/piforcast && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/projects/piforcast/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/pi/projects/piforcast && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/pi/projects/piforcast && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/pi/projects/piforcast && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pi/Downloads/piforcast-master && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/pi/projects/piforcast && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/piforcast.dir/rule:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/piforcast.dir/rule
+	cd /home/pi/projects/piforcast && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/piforcast.dir/rule
 .PHONY : src/CMakeFiles/piforcast.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ piforcast: src/CMakeFiles/piforcast.dir/rule
 
 # fast build rule for target.
 piforcast/fast:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/build
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/build
 .PHONY : piforcast/fast
 
 # Convenience name for target.
 src/CMakeFiles/piforcast_automoc.dir/rule:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/piforcast_automoc.dir/rule
+	cd /home/pi/projects/piforcast && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/piforcast_automoc.dir/rule
 .PHONY : src/CMakeFiles/piforcast_automoc.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ piforcast_automoc: src/CMakeFiles/piforcast_automoc.dir/rule
 
 # fast build rule for target.
 piforcast_automoc/fast:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast_automoc.dir/build.make src/CMakeFiles/piforcast_automoc.dir/build
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast_automoc.dir/build.make src/CMakeFiles/piforcast_automoc.dir/build
 .PHONY : piforcast_automoc/fast
 
 bme280.o: bme280.c.o
@@ -146,7 +146,7 @@ bme280.o: bme280.c.o
 
 # target to build an object file
 bme280.c.o:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/bme280.c.o
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/bme280.c.o
 .PHONY : bme280.c.o
 
 bme280.i: bme280.c.i
@@ -155,7 +155,7 @@ bme280.i: bme280.c.i
 
 # target to preprocess a source file
 bme280.c.i:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/bme280.c.i
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/bme280.c.i
 .PHONY : bme280.c.i
 
 bme280.s: bme280.c.s
@@ -164,7 +164,7 @@ bme280.s: bme280.c.s
 
 # target to generate assembly for a file
 bme280.c.s:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/bme280.c.s
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/bme280.c.s
 .PHONY : bme280.c.s
 
 capteur2.o: capteur2.cpp.o
@@ -173,7 +173,7 @@ capteur2.o: capteur2.cpp.o
 
 # target to build an object file
 capteur2.cpp.o:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/capteur2.cpp.o
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/capteur2.cpp.o
 .PHONY : capteur2.cpp.o
 
 capteur2.i: capteur2.cpp.i
@@ -182,7 +182,7 @@ capteur2.i: capteur2.cpp.i
 
 # target to preprocess a source file
 capteur2.cpp.i:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/capteur2.cpp.i
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/capteur2.cpp.i
 .PHONY : capteur2.cpp.i
 
 capteur2.s: capteur2.cpp.s
@@ -191,7 +191,7 @@ capteur2.s: capteur2.cpp.s
 
 # target to generate assembly for a file
 capteur2.cpp.s:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/capteur2.cpp.s
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/capteur2.cpp.s
 .PHONY : capteur2.cpp.s
 
 main.o: main.cpp.o
@@ -200,7 +200,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/main.cpp.o
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -209,7 +209,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/main.cpp.i
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -218,7 +218,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/main.cpp.s
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 piforcast_automoc.o: piforcast_automoc.cpp.o
@@ -227,7 +227,7 @@ piforcast_automoc.o: piforcast_automoc.cpp.o
 
 # target to build an object file
 piforcast_automoc.cpp.o:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.o
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.o
 .PHONY : piforcast_automoc.cpp.o
 
 piforcast_automoc.i: piforcast_automoc.cpp.i
@@ -236,7 +236,7 @@ piforcast_automoc.i: piforcast_automoc.cpp.i
 
 # target to preprocess a source file
 piforcast_automoc.cpp.i:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.i
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.i
 .PHONY : piforcast_automoc.cpp.i
 
 piforcast_automoc.s: piforcast_automoc.cpp.s
@@ -245,7 +245,7 @@ piforcast_automoc.s: piforcast_automoc.cpp.s
 
 # target to generate assembly for a file
 piforcast_automoc.cpp.s:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.s
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/piforcast_automoc.cpp.s
 .PHONY : piforcast_automoc.cpp.s
 
 qrc_resources.o: qrc_resources.cpp.o
@@ -254,7 +254,7 @@ qrc_resources.o: qrc_resources.cpp.o
 
 # target to build an object file
 qrc_resources.cpp.o:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/qrc_resources.cpp.o
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/qrc_resources.cpp.o
 .PHONY : qrc_resources.cpp.o
 
 qrc_resources.i: qrc_resources.cpp.i
@@ -263,7 +263,7 @@ qrc_resources.i: qrc_resources.cpp.i
 
 # target to preprocess a source file
 qrc_resources.cpp.i:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/qrc_resources.cpp.i
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/qrc_resources.cpp.i
 .PHONY : qrc_resources.cpp.i
 
 qrc_resources.s: qrc_resources.cpp.s
@@ -272,7 +272,7 @@ qrc_resources.s: qrc_resources.cpp.s
 
 # target to generate assembly for a file
 qrc_resources.cpp.s:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/qrc_resources.cpp.s
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/qrc_resources.cpp.s
 .PHONY : qrc_resources.cpp.s
 
 sensors.o: sensors.c.o
@@ -281,7 +281,7 @@ sensors.o: sensors.c.o
 
 # target to build an object file
 sensors.c.o:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/sensors.c.o
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/sensors.c.o
 .PHONY : sensors.c.o
 
 sensors.i: sensors.c.i
@@ -290,7 +290,7 @@ sensors.i: sensors.c.i
 
 # target to preprocess a source file
 sensors.c.i:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/sensors.c.i
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/sensors.c.i
 .PHONY : sensors.c.i
 
 sensors.s: sensors.c.s
@@ -299,7 +299,7 @@ sensors.s: sensors.c.s
 
 # target to generate assembly for a file
 sensors.c.s:
-	cd /home/pi/Downloads/piforcast-master && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/sensors.c.s
+	cd /home/pi/projects/piforcast && $(MAKE) -f src/CMakeFiles/piforcast.dir/build.make src/CMakeFiles/piforcast.dir/sensors.c.s
 .PHONY : sensors.c.s
 
 # Help Target
@@ -341,6 +341,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pi/Downloads/piforcast-master && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/pi/projects/piforcast && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

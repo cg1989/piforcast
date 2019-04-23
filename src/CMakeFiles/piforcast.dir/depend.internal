@@ -16,6 +16,7 @@ src/CMakeFiles/piforcast.dir/capteur2.cpp.o
  /home/pi/projects/piforcast/src/capteur2.cpp
  /home/pi/projects/piforcast/src/capteur2.h
  /home/pi/projects/piforcast/src/sensors.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/QDebug
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/QObject
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/QString
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qalgorithms.h
@@ -31,17 +32,26 @@ src/CMakeFiles/piforcast.dir/capteur2.cpp.o
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qcompilerdetection.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qconfig.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qcontainerfwd.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qcontiguouscache.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qcoreevent.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qdatastream.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qdebug.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qfeatures.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qflags.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qgenericatomic.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qglobal.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qglobalstatic.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qhash.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qhashfunctions.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qiodevice.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qisenum.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qiterator.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qline.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qlist.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qlocale.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qlogging.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qmap.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qmargins.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qmetatype.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qmutex.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qnamespace.h
@@ -51,20 +61,52 @@ src/CMakeFiles/piforcast.dir/capteur2.cpp.o
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qobjectdefs.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qobjectdefs_impl.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qpair.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qpoint.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qprocessordetection.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qrect.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qrefcount.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qregexp.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qscopedpointer.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qset.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qshareddata.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qsharedpointer.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qsharedpointer_impl.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qsize.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qstring.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qstringbuilder.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qstringlist.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qstringmatcher.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qsysinfo.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qsystemdetection.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qtextstream.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qtypeinfo.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qtypetraits.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qvariant.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qvarlengtharray.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtCore/qvector.h
  /usr/include/arm-linux-gnueabihf/qt5/QtCore/qversiontagging.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/QPainter
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qbrush.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qcolor.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qfont.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qfontinfo.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qfontmetrics.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qimage.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qmatrix.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qpaintdevice.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qpainter.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qpainterpath.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qpen.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qpixelformat.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qpixmap.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qpolygon.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qregion.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qrgb.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qrgba64.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qtextoption.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qtransform.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qwindowdefs.h
+ /usr/include/arm-linux-gnueabihf/qt5/QtGui/qwindowdefs_win.h
 src/CMakeFiles/piforcast.dir/main.cpp.o
  /home/pi/projects/piforcast/src/bme280.h
  /home/pi/projects/piforcast/src/bme280_defs.h
