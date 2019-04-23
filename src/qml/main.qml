@@ -1,12 +1,13 @@
 import QtQuick 2.0
-import QtQuick.Window 2.0
+import QtQuick.Window 2.2
 
 
 Window
 {
     visible: true
+    //visibility: "FullScreen"
     width: 800
-    height: 600
+    height: 480
     
     
 
@@ -76,10 +77,10 @@ Window
         //anchors.fill: parent
         color: "white"
             Image{
+            id:image
                 sourceSize.width: Math.min(parent.width/1.5,parent.height/1.5)
                 sourceSize.height: Math.min(parent.width/1.5,parent.height/1.5)
                 anchors.centerIn: parent
-                source:"rain.svg"
             }
         }
         
@@ -212,13 +213,13 @@ Window
             height: parent.height/3
             color: "white"
             Text {
-                id:tendance
+                id:description
                 text: qsTr("%1")
                 color: "#000000"
                 anchors.horizontalCenter: parent.horizontalCenter
                 font.family: "AnjaliOldLipi"
                 font.bold : true
-                font.pixelSize: (parent.height+parent.width/2)/15
+                font.pixelSize: (parent.height+parent.width/2)/16
             }
             Image{
             id:trend
@@ -243,8 +244,8 @@ Window
         trend.source = i.arg(sensor.tend)
         heure.text = new Date().toLocaleTimeString(Qt.locale("fr_FR"),"hh:mm:ss")
         date.text = new Date().toLocaleDateString(Qt.locale("fr_FR"),"dddd d MMMM")
-        tendance.text = des.arg(sensor.des)
-        
+        description.text = des.arg(sensor.des)
+        image.source = img.arg(sensor.image)
 	}
 	
     Timer {
@@ -255,4 +256,5 @@ Window
 		triggeredOnStart: true
 		onTriggered: update()
 	}
+    
 }
