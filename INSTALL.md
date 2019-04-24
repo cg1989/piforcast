@@ -69,14 +69,3 @@ Pour lancer le projet, il suffit d'entrer la commande suivante:
 ```
 
 
-## Auteurs
-
-* **Camille Geimer** - *Travail initial* - [cg1989](https://github.com/cg1989)
-
-* **Dominique Jau** - *Contributeur* - 
-
-
-## Remerciements
-
-* Sébastien Huss pour ses conseils avisés
-
