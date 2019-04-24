@@ -53,10 +53,15 @@ git clone http://github.com/cg1989/piforcast
 
 ## Compilation
 
-A la racine (piforcast), executez Cmake puis le Makefile grâce à la comande:
+Nous recommandons de créer un dossier build dans lequel sera compilé le projet.
 
 ```
-cmake . && make
+mkdir build && cd build
+```
+Exécutez Cmake puis le Makefile grâce à la comande:
+
+```
+cmake .. && make
 ```
 
 
