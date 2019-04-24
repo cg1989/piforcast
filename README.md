@@ -11,13 +11,13 @@ Les instructions qui suivent ont pour but de vous guider sur l'installation, la 
 
 Avoir une une rapsberry pi avec une distribution à jour de raspbian. Voir  [ce tuto](https://raspbian-france.fr/creez-carte-sd-raspbian-raspberry-pi-windows/) pour l'installation depuis windows.
 
-Un certain nombre de paquets devront être installer sur votre distribution pour que vous puissiez compiler et exécuter corerctement le projet.
+Un certain nombre de paquets devront être installés sur votre distribution pour que vous puissiez compiler et exécuter corerctement le projet.
 
 ```
 sudo apt-get install qt5-default qt5-qmake qtdeclarative5-dev qtdeclarative5-dev-tools qml-module-qtquick2 qml-module-qtquick-controls
 ```
 
-Cmake est utilisé dans la compilation du projet, il peut être installer comme suit:
+Cmake est utilisé dans la compilation du projet, il peut être installé comme suit:
 
 ```
 sudo apt-get install cmake
@@ -45,7 +45,7 @@ Git doit être installer sur la distribution. Il est normalement fourni si vous 
 sudo apt-get install git
 ```
 
-CLonage du dépôt:
+Clonage du dépôt:
 
 ```
 git clone http://github.com/cg1989/piforcast
