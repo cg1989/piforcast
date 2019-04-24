@@ -4,7 +4,7 @@ Pi4Cast est une application embarqué sur Raspberry Pi pouvant prédire le temps
 
 ## Qui sommes nous?
 
-Dominique Jau et Camille Geimer sont des élèves de la formation "Developpeur C/C++" proposé par AJC Formation. Dans ce contexte, nous avons un algorithme de prévisions météo basé sur la pression atmosphérique sur du matériel embarqué.
+Nous, Dominique Jau et Camille Geimer, sommes des élèves de la formation "Developpeur C/C++" proposé par AJC Formation. Dans ce contexte, nous avons un algorithme de prévisions météo basé sur la pression atmosphérique sur du matériel embarqué.
 
 ## Le projet Pi4Cast
 
@@ -22,6 +22,8 @@ Ce projet s'est déroulé en 3 semaines sur le mois d'avril 2019 et à donner li
 ## Illustration
 
 L'interface minimaliste:
+
+*Image à ajouter*
 
 
 
