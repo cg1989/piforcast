@@ -33,7 +33,6 @@ src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qcontainerfwd.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qcontiguouscache.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qcoreevent.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qdatastream.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qdebug.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qfeatures.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qflags.h
@@ -45,12 +44,10 @@ src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qiodevice.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qisenum.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qiterator.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qline.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qlist.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qlocale.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qlogging.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qmap.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qmargins.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qmetatype.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qmutex.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qnamespace.h
@@ -62,7 +59,6 @@ src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qpair.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qpoint.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qprocessordetection.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qrect.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qrefcount.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qregexp.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qscopedpointer.h
@@ -70,7 +66,6 @@ src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qshareddata.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qsharedpointer.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qsharedpointer_impl.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qsize.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qstring.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qstringbuilder.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qstringlist.h
@@ -84,28 +79,6 @@ src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qvarlengtharray.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qvector.h
 src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtCore/qversiontagging.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/QPainter
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qbrush.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qcolor.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qfont.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qfontinfo.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qfontmetrics.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qimage.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qmatrix.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qpaintdevice.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qpainter.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qpainterpath.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qpen.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qpixelformat.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qpixmap.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qpolygon.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qregion.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qrgb.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qrgba64.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qtextoption.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qtransform.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qwindowdefs.h
-src/CMakeFiles/piforcast.dir/capteur2.cpp.o: /usr/include/arm-linux-gnueabihf/qt5/QtGui/qwindowdefs_win.h
 
 src/CMakeFiles/piforcast.dir/main.cpp.o: src/bme280.h
 src/CMakeFiles/piforcast.dir/main.cpp.o: src/bme280_defs.h

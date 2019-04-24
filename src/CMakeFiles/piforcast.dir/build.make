@@ -58,10 +58,19 @@ include src/CMakeFiles/piforcast.dir/progress.make
 include src/CMakeFiles/piforcast.dir/flags.make
 
 src/qrc_resources.cpp: src/qml/main.qml
-src/qrc_resources.cpp: src/qml/rain.svg
 src/qrc_resources.cpp: src/qml/0.svg
 src/qrc_resources.cpp: src/qml/-1.svg
 src/qrc_resources.cpp: src/qml/1.svg
+src/qrc_resources.cpp: src/qml/averses.svg
+src/qrc_resources.cpp: src/qml/aversesfortes.svg
+src/qrc_resources.cpp: src/qml/eclaircies.svg
+src/qrc_resources.cpp: src/qml/nuageux.svg
+src/qrc_resources.cpp: src/qml/orage.svg
+src/qrc_resources.cpp: src/qml/petitepluie.svg
+src/qrc_resources.cpp: src/qml/peunuageux.svg
+src/qrc_resources.cpp: src/qml/pluie.svg
+src/qrc_resources.cpp: src/qml/soleil.svg
+src/qrc_resources.cpp: src/qml/changeant.svg
 src/qrc_resources.cpp: src/resources.qrc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/projects/piforcast/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating qrc_resources.cpp"
 	cd /home/pi/projects/piforcast/src && /usr/lib/arm-linux-gnueabihf/qt5/bin/rcc --name resources --output /home/pi/projects/piforcast/src/qrc_resources.cpp /home/pi/projects/piforcast/src/resources.qrc

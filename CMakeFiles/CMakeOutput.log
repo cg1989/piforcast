@@ -540,3 +540,48 @@ make[1] : on quitte le répertoire « /home/pi/projects/piforcast/CMakeFiles/C
     Feature record: CXX_FEATURE:0cxx_variable_templates
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX1Y succeeded with the following output:
+Change Dir: /home/pi/projects/piforcast/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7287a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7287a.dir/build.make CMakeFiles/cmTC_7287a.dir/build
+make[1]: Entering directory '/home/pi/projects/piforcast/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7287a.dir/src.cxx.o
+/usr/bin/c++     -DCOMPILER_SUPPORTS_CXX1Y   -std=c++1y -o CMakeFiles/cmTC_7287a.dir/src.cxx.o -c /home/pi/projects/piforcast/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7287a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7287a.dir/link.txt --verbose=1
+/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX1Y    CMakeFiles/cmTC_7287a.dir/src.cxx.o  -o cmTC_7287a -rdynamic 
+make[1]: Leaving directory '/home/pi/projects/piforcast/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
+Change Dir: /home/pi/projects/piforcast/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d4d0e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d4d0e.dir/build.make CMakeFiles/cmTC_d4d0e.dir/build
+make[1]: Entering directory '/home/pi/projects/piforcast/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d4d0e.dir/src.cxx.o
+/usr/bin/c++     -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_d4d0e.dir/src.cxx.o -c /home/pi/projects/piforcast/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d4d0e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4d0e.dir/link.txt --verbose=1
+/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11    CMakeFiles/cmTC_d4d0e.dir/src.cxx.o  -o cmTC_d4d0e -rdynamic 
+make[1]: Leaving directory '/home/pi/projects/piforcast/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX0X succeeded with the following output:
+Change Dir: /home/pi/projects/piforcast/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_68845/fast"
+/usr/bin/make -f CMakeFiles/cmTC_68845.dir/build.make CMakeFiles/cmTC_68845.dir/build
+make[1]: Entering directory '/home/pi/projects/piforcast/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_68845.dir/src.cxx.o
+/usr/bin/c++     -DCOMPILER_SUPPORTS_CXX0X   -std=c++0x -o CMakeFiles/cmTC_68845.dir/src.cxx.o -c /home/pi/projects/piforcast/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_68845
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68845.dir/link.txt --verbose=1
+/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX0X    CMakeFiles/cmTC_68845.dir/src.cxx.o  -o cmTC_68845 -rdynamic 
+make[1]: Leaving directory '/home/pi/projects/piforcast/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }

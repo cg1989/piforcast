@@ -7,7 +7,7 @@
 #include <utility>
 #include <QString>
 #include <QDebug>
-#include <QPainter>
+
 
 using namespace std; 
 
@@ -63,13 +63,13 @@ void Capteur::refresh() {
         }
         cout << pres_heure.back() <<" "<< pres_heure.size()<< " "<< m_tend <<endl;
     }
-    count++;
     
+
     int zambretti = calc_zam(m_tend,m_pres);
-    m_image = image_zam(zambretti-1);
-    m_des = descrip_zam(zambretti-1);
-    //qDebug() << m_image <<" "<< m_des <<" "<< zambretti;
+    m_image = image_zam(zambretti);
+    m_des = descrip_zam(zambretti);
     
+    count++;
     
 }
 
@@ -117,8 +117,7 @@ int Capteur::calc_zam(int tend, qreal m_pres) {
 }
 
 
-QString Capteur::descrip_zam(int Z) {
-    //Z++;
+QString Capteur::descrip_zam(int z) {
 	std::vector<QString> res = {
 		"Beau temps, calme",                    "Beau fixe",
         "S'améliorant vers beau temps",         "Beau, se dégradant légérement",
@@ -126,22 +125,22 @@ QString Capteur::descrip_zam(int Z) {
         "Assez beau, averses prochaines",       "Assez beau, se dégradant en averses",
         "Averses, s'améliorant",                "Changeant, nuageux",
         "Averses probable",                     "Nuageux pouvant s'améliorer",
-        "Nuageux s'améliorant",                 "Averses, brèves éclaircies"
+        "Nuageux s'améliorant",                 "Averses, brèves éclaircies",
         "Averses, se dégradant",                "Changeant, pluie possible",
         "Incertain, brèves éclaircies",         "Nuageux, pluie à venir",
         "Nuageux, petite pluie",                "Très nuageux, incertain",
         "Pluies occasionnelles se détériorant", "Pluies, très nuageux",
         "Pluies",                               "Pluies, très nuageux",
         "Tempêtueux, pouvant s'améliorer",      "Tempétueux, beaucoup de pluie"};
-	return res[Z];
+	return res[z-1];
 }
 
-QString Capteur::image_zam(int Z) {
+QString Capteur::image_zam(int z) {
 	std::vector<QString> res = {
 		"soleil","soleil","peunuageux","peunuageux","averses","peunuageux","averses","averses","aversesfortes","eclaircies",
 		"aversesfortes","eclaircies","eclaircies","aversesfortes","aversesfortes","changeant","eclaircies","averses","petitepluie","nuageux",
 		"petitepluie","pluie","pluie","pluie","orage","orage"};
-	return res[Z];
+	return res[z-1];
 }
 
 //méthode pour température

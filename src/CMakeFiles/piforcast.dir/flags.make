@@ -9,7 +9,7 @@ C_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_L
 
 C_INCLUDES = -isystem /usr/include/arm-linux-gnueabihf/qt5 -isystem /usr/include/arm-linux-gnueabihf/qt5/QtQml -isystem /usr/include/arm-linux-gnueabihf/qt5/QtNetwork -isystem /usr/include/arm-linux-gnueabihf/qt5/QtCore -isystem /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++ -isystem /usr/include/arm-linux-gnueabihf/qt5/QtGui 
 
-CXX_FLAGS =   -fPIC -std=gnu++11
+CXX_FLAGS =  -std=c++1y   -fPIC -std=gnu++11
 
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB
 

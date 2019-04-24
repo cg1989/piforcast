@@ -52,8 +52,8 @@ public:
     void initialisation();
     int tendance(vector<qreal> vec);
     int calc_zam(int tend, qreal m_pres);
-    QString descrip_zam(int Z);
-    QString image_zam(int Z);
+    QString descrip_zam(int z);
+    QString image_zam(int z);
     qreal temp() const;
     qreal pres() const;
     qreal humi() const;
