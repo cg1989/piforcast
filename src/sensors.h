@@ -11,7 +11,7 @@ extern "C" {
 
 struct bme280_dev init();
 
-struct bme280_data refresh(struct bme280_dev *dev);
+struct bme280_data getData(struct bme280_dev *dev);
 
 #if defined (__cplusplus)
 }

@@ -87,7 +87,7 @@ struct bme280_dev init()
   return dev;
 }
 
-struct bme280_data refresh(struct bme280_dev *dev)
+struct bme280_data getData(struct bme280_dev *dev)
 {
     int8_t rslt;
     struct bme280_data comp_data;

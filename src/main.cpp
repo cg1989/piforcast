@@ -1,7 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-#include "capteur2.h"
+#include "capteur.h"
 #include "sensors.h"
 #include "bme280.h"
 

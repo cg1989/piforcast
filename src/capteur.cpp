@@ -1,4 +1,4 @@
-#include "capteur2.h"
+#include "capteur.h"
 #include "sensors.h"
 #include "bme280.h"
 #include <iostream>
@@ -9,7 +9,6 @@
 #include <QDebug>
 
 
-using namespace std; 
 
 Capteur::Capteur() {
     
@@ -19,15 +18,17 @@ void Capteur::initialisation(){
     m_dev = init();
 }
 
+//formule du nivellement barométrique
+// voir https://fr.wikipedia.org/wiki/Variation_de_la_pression_atmosphérique_avec_l%27altitude
 qreal convert_pres(qreal pres, qreal alt,qreal temp){
     qreal kelvin = temp + 273.15;
     return pres+1013.25*(1-pow((kelvin-0.0065*alt)/kelvin,5.255));
 
 }
-// A mettre en méthode
-int Capteur::tendance(vector<qreal>  vec){
-    int tend = 0;
-    if (vec.size() != 0){
+
+qint8 Capteur::tendance(std::vector<qreal>  vec){
+    qint8 tend = 0;
+    if (vec.size() > 2){
         qreal tmp = vec.back() - vec.front();
         if(tmp > 0.3){
             tend = 1;
@@ -36,7 +37,6 @@ int Capteur::tendance(vector<qreal>  vec){
         }else{
             tend = 0;
         }
-        //cout << tend << endl;
         return tend;
     }
 }
@@ -45,7 +45,7 @@ int Capteur::tendance(vector<qreal>  vec){
 void Capteur::refresh() {
     
     struct bme280_data data;
-    data = stream_sensor_data_normal_mode(&m_dev);
+    data = getData(&m_dev);
     m_temp = data.temperature;
     m_humi = data.humidity;
     m_pres = convert_pres(data.pressure/100,151, m_temp);
@@ -57,26 +57,26 @@ void Capteur::refresh() {
         count=0;
         sum_pres=m_pres;
         pres_heure.push_back(m_pres_min);
-        m_tend = Capteur::tendance( pres_heure);
-                if(pres_heure.size() > 60){
+        m_tend = tendance(pres_heure);
+        if(pres_heure.size() > 60){
             pres_heure.erase(pres_heure.begin());
         }
         cout << pres_heure.back() <<" "<< pres_heure.size()<< " "<< m_tend <<endl;
     }
     
 
-    int zambretti = calc_zam(m_tend,m_pres);
-    m_image = image_zam(zambretti);
-    m_des = descrip_zam(zambretti);
+    qint8 zambretti = calc_zam(m_tend,m_pres);
+    m_image = image_zam(zambretti-1);
+    m_des = descrip_zam(zambretti-1);
     
     count++;
     
 }
 
 
-//algo zambetti
+//algo zambretti
 
-int Capteur::calc_zam(int tend, qreal m_pres) {
+qint8 Capteur::calc_zam(qint8 tend, qreal m_pres) {
     
     if(tend == -1){
         if (m_pres >= 1050){return 1;}
@@ -117,9 +117,9 @@ int Capteur::calc_zam(int tend, qreal m_pres) {
 }
 
 
-QString Capteur::descrip_zam(int z) {
+QString Capteur::descrip_zam(qint8 z) {
 	std::vector<QString> res = {
-		"Beau temps, calme",                    "Beau fixe",
+        "Beau temps, calme",                    "Beau fixe",
         "S'améliorant vers beau temps",         "Beau, se dégradant légérement",
         "Beau, averses possible",               "Assez beau, s'améliorant",
         "Assez beau, averses prochaines",       "Assez beau, se dégradant en averses",
@@ -131,40 +131,39 @@ QString Capteur::descrip_zam(int z) {
         "Nuageux, petite pluie",                "Très nuageux, incertain",
         "Pluies occasionnelles se détériorant", "Pluies, très nuageux",
         "Pluies",                               "Pluies, très nuageux",
-        "Tempêtueux, pouvant s'améliorer",      "Tempétueux, beaucoup de pluie"};
-	return res[z-1];
+        "Tempêtueux, pouvant s'améliorer",      "Tempétueux, beaucoup de pluie"
+    };
+	return res[z];
 }
 
-QString Capteur::image_zam(int z) {
+QString Capteur::image_zam(qint8 z) {
 	std::vector<QString> res = {
 		"soleil","soleil","peunuageux","peunuageux","averses","peunuageux","averses","averses","aversesfortes","eclaircies",
 		"aversesfortes","eclaircies","eclaircies","aversesfortes","aversesfortes","changeant","eclaircies","averses","petitepluie","nuageux",
 		"petitepluie","pluie","pluie","pluie","orage","orage"};
-	return res[z-1];
+	return res[z];
 }
 
-//méthode pour température
+//getteurs
 qreal Capteur::temp() const
 {
     return m_temp;
 }
 
 
-//méthode pour pression
 qreal Capteur::pres() const
 {
     return m_pres;
 }
 
 
-//méthode pour humidité
 qreal Capteur::humi() const
 {
     return m_humi;
 }
 
-//méthode pour tendence
-int Capteur::tend() const
+
+qint8 Capteur::tend() const
 {
     return m_tend;
 }
