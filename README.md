@@ -33,7 +33,7 @@ L'interface minimaliste:
 
 * **Camille Geimer** - *Travail initial* - [cg1989](https://github.com/cg1989)
 
-* **Dominique Jau** - *Contributeur* - 
+* **Dominique Jau** - *Contributeur* - [titjoe31](https://github.com/titjoe31)
 
 
 ## Remerciements
