@@ -26,7 +26,7 @@ qreal convert_pres(qreal pres, qreal alt,qreal temp){
 
 }
 
-qint8 Capteur::tendance(std::vector<qreal>  vec){
+int Capteur::tendance(std::vector<qreal>  vec){
     qint8 tend = 0;
     if (vec.size() > 2){
         qreal tmp = vec.back() - vec.front();
@@ -163,7 +163,7 @@ qreal Capteur::humi() const
 }
 
 
-qint8 Capteur::tend() const
+int Capteur::tend() const
 {
     return m_tend;
 }

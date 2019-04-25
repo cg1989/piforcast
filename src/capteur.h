@@ -16,7 +16,7 @@ class Capteur : public QObject
     Q_PROPERTY(qreal temp READ temp  NOTIFY tempChanged)
     Q_PROPERTY(qreal pres READ pres  NOTIFY presChanged)
     Q_PROPERTY(qreal humi READ humi  NOTIFY humiChanged)
-    Q_PROPERTY(qint8 tend READ tend  NOTIFY tendChanged)
+    Q_PROPERTY(int tend READ tend  NOTIFY tendChanged)
     Q_PROPERTY(QString des READ des  NOTIFY desChanged)
     Q_PROPERTY(QString image READ image  NOTIFY imageChanged)
     
@@ -25,7 +25,7 @@ private:
     int count = 0;
     qreal sum_pres = 0;
     vector<qreal> pres_heure;
-    qint8 m_tend = 0;
+    int m_tend = 0;
     
     qreal m_temp;
     qreal m_pres;
@@ -50,14 +50,14 @@ public slots:
 public:
     Capteur();
     void initialisation();
-    qint8 tendance(vector<qreal> vec);
+    int tendance(vector<qreal> vec);
     qint8 calc_zam(qint8 tend, qreal m_pres);
     QString descrip_zam(qint8 z);
     QString image_zam(qint8 z);
     qreal temp() const;
     qreal pres() const;
     qreal humi() const;
-    qint8 tend() const;
+    int tend() const;
     QString image() const;
     QString des() const;
 
