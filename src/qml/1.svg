@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.2" width="70mm" height="70mm" viewBox="0 0 7000 7000" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:ooo="http://xml.openoffice.org/svg/export" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:presentation="http://sun.com/xmlns/staroffice/presentation" xmlns:smil="http://www.w3.org/2001/SMIL20/" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xml:space="preserve">
+<svg version="1.2" width="52.13mm" height="52.13mm" viewBox="-9 -9 5213 5213" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:ooo="http://xml.openoffice.org/svg/export" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:presentation="http://sun.com/xmlns/staroffice/presentation" xmlns:smil="http://www.w3.org/2001/SMIL20/" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xml:space="preserve">
  <defs class="ClipPathGroup">
   <clipPath id="presentation_clip_path" clipPathUnits="userSpaceOnUse">
-   <rect x="0" y="0" width="7000" height="7000"/>
+   <rect x="-9" y="-9" width="5213" height="5213"/>
   </clipPath>
   <clipPath id="presentation_clip_path_shrink" clipPathUnits="userSpaceOnUse">
-   <rect x="7" y="7" width="6986" height="6986"/>
+   <rect x="-4" y="-4" width="5203" height="5203"/>
   </clipPath>
  </defs>
  <defs class="TextShapeIndex">
@@ -45,12 +45,6 @@
   </g>
  </defs>
  <defs class="TextEmbeddedBitmaps"/>
- <g>
-  <g id="id2" class="Master_Slide">
-   <g id="bg-id2" class="Background"/>
-   <g id="bo-id2" class="BackgroundObjects"/>
-  </g>
- </g>
  <g class="SlideGroup">
   <g>
    <g id="container-id1">
@@ -58,17 +52,17 @@
      <g class="Page">
       <g class="Graphic">
        <g id="id3">
-        <rect class="BoundingBox" stroke="none" fill="none" x="-10" y="-9" width="7001" height="7001"/>
+        <rect class="BoundingBox" stroke="none" fill="none" x="-10" y="-9" width="5215" height="5215"/>
         <defs>
          <clipPath id="clip_path_1" clipPathUnits="userSpaceOnUse">
-          <path d="M 6990,6990 L -9,6990 -9,-9 6990,-9 6990,6990 Z"/>
+          <path d="M 5204,5204 L -9,5204 -9,-9 5204,-9 5204,5204 Z"/>
          </clipPath>
         </defs>
         <g clip-path="url(#clip_path_1)">
-         <path fill="rgb(255,255,255)" stroke="none" d="M 3491,6790 C 1620,6790 191,5361 191,3491 191,1620 1620,191 3490,191 5361,191 6790,1620 6790,3490 6790,5361 5361,6790 3491,6790 L 3491,6790 Z"/>
-         <path fill="none" stroke="rgb(0,0,0)" stroke-width="400" stroke-linejoin="round" d="M 3491,6790 C 1620,6790 191,5361 191,3491 191,1620 1620,191 3490,191 5361,191 6790,1620 6790,3490 6790,5361 5361,6790 3491,6790 L 3491,6790 Z"/>
-         <path fill="none" stroke="rgb(0,0,0)" stroke-width="400" stroke-linejoin="round" d="M 3491,5590 L 3490,3540"/>
-         <path fill="rgb(0,0,0)" stroke="none" d="M 3490,1391 L 2741,3640 4240,3640 3490,1391 3490,1391 Z"/>
+         <path fill="rgb(255,255,255)" stroke="none" d="M 2598,4954 C 1262,4954 241,3934 241,2598 241,1262 1262,241 2597,241 3934,241 4954,1262 4954,2598 4954,3934 3934,4954 2598,4954 L 2598,4954 Z"/>
+         <path fill="none" stroke="rgb(0,0,0)" stroke-width="500" stroke-linejoin="round" d="M 2598,4954 C 1262,4954 241,3934 241,2598 241,1262 1262,241 2597,241 3934,241 4954,1262 4954,2598 4954,3934 3934,4954 2598,4954 L 2598,4954 Z"/>
+         <path fill="none" stroke="rgb(0,0,0)" stroke-width="500" stroke-linejoin="round" d="M 2597,4097 L 2597,2633"/>
+         <path fill="rgb(0,0,0)" stroke="none" d="M 2597,1098 L 2062,2704 3133,2704 2597,1098 2597,1098 Z"/>
         </g>
        </g>
       </g>
