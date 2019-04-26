@@ -1,4 +1,14 @@
-
+/**
+ * \file sensors.c
+ * \brief Implémentation pour les drivers du capteurs.
+ * \author Camille Geimer & Dominique Jau
+ * \version 1.0
+ * \date 6 septembre 2007
+ *
+ * Permet l'utilisation des fonctions présentes dans les fichiers BME280.c .
+ * Basé sur le code du main.c présent dans le démocode disponible à cettte adresse: https://www.waveshare.com/wiki/BME280_Environmental_Sensor
+ *
+ */
 
 #include "sensors.h"
 #include "bme280.h"
@@ -7,7 +17,6 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdint.h>
-//#include <wiringPi.h>
 
 //Default write it to the register in one time
 #define USESPISINGLEREADWRITE 0 
@@ -46,6 +55,14 @@ int8_t user_i2c_write(uint8_t id, uint8_t reg_addr, uint8_t *data, uint16_t len)
   free(buf);
   return 0;
 }
+
+/**
+ * \fn init
+ * \brief Fonction d'initiatlisation du capteur
+ *
+ * 
+ * \return BME280 Init Result is: 0 si pas d'erreur, -1 ou -2 sinon.
+ */
 
 struct bme280_dev init()
 {
@@ -87,6 +104,14 @@ struct bme280_dev init()
   return dev;
 }
 
+/**
+ * \fn getData
+ * \brief Permet la collecte des données capteur.
+ *
+ * \return comp_data qui contient une donnée pour chaque variable.
+ */
+
+
 struct bme280_data getData(struct bme280_dev *dev)
 {
     int8_t rslt;
@@ -97,14 +122,4 @@ struct bme280_data getData(struct bme280_dev *dev)
 	
 }
 
-/*
-void main(){
-  struct bme280_dev test;
-  struct bme280_data data;
-  test = init();
-  data = stream_sensor_data_normal_mode( &test);
-  printf("%f", data.temperature);
-  
 
-}
-*/

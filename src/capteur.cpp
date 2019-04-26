@@ -8,23 +8,63 @@
 #include <QString>
 #include <QDebug>
 
+/*!
+ * \file capteur.h
+ * \brief Class objet de base pour le projet Pi4Cast
+ * \author Camille Geimer & Dominique Jau
+ * \version 1.0
+ */
 
-
+/*! \class Capteur
+ * \brief classe representant le capteur.
+ *
+ *  La classe gére toutes les données du capteur (température, pression et humidité) à travers le fichier sensors.c
+ *  Elle gère aussi l'algorithme de Zambretti
+ */
+ 
 Capteur::Capteur() {
     
 }
 
+/*!
+ *  \brief Initialisateur
+ *
+ *  Initialise le capteur BME280
+ *
+ */
+    
 void Capteur::initialisation(){
     m_dev = init();
 }
 
-//formule du nivellement barométrique
-// voir https://fr.wikipedia.org/wiki/Variation_de_la_pression_atmosphérique_avec_l%27altitude
+/*!
+ *  \brief Standardisation de la pression atmosphérique
+ *
+ *  formule du nivellement barométrique: https://fr.wikipedia.org/wiki/Variation_de_la_pression_atmosphérique_avec_l%27altitude
+ *
+ * \param <pres> { la pression mesurée }
+ * \param <alt> { altitude fixé dans le code à 151m (toulouse)}
+ * \param <temp> { la température mesurée }
+ * 
+ * \return {valeur de pression ramené à l'altitude 0}
+ */
+
 qreal convert_pres(qreal pres, qreal alt,qreal temp){
     qreal kelvin = temp + 273.15;
     return pres+1013.25*(1-pow((kelvin-0.0065*alt)/kelvin,5.255));
 
 }
+
+/*!
+ *  \brief Calcul de tendance
+ *
+ *  Utilise le vecteur de stockage des pressions pour calculer une tendance sur 1h
+ *
+ * \param <vec> { le vecteur des pressions }
+ 
+ * 
+ * \return {\return {Renvoi une valeur de -1, 0 ou 1 en cas de tendance respectivement négative, nulle ou positive}}
+ */
 
 int Capteur::tendance(std::vector<qreal>  vec){
     qint8 tend = 0;
@@ -40,6 +80,15 @@ int Capteur::tendance(std::vector<qreal>  vec){
         return tend;
     }
 }
+
+/*!
+ *  \brief Méthode de rafraichissement transmise à l'interface 
+ *
+ *  Cette méthode permet de récupérer les variables du capteur et de les rendre disponible pour l'interface graphique
+ *  Elle gère aussi la création du vecteur des pressions et son alimentation en données.
+ *  Elle transmet aussi les résultats de l'algorithmede Zambretti
+ *
+ */
 
 //refresh
 void Capteur::refresh() {
@@ -74,7 +123,12 @@ void Capteur::refresh() {
 }
 
 
-//algo zambretti
+/*!
+ *  \brief Algorithme de Zambretti
+ *
+ * Implémentation de l'algorithme de Zambretti tel que décrit à cette source: http://drkfs.net/zambretti.htm
+ * \return {Renvoi une valeur de 1 à 26 équivalent au lettre de Zambretti}
+ */
 
 qint8 Capteur::calc_zam(qint8 tend, qreal m_pres) {
     
@@ -116,6 +170,12 @@ qint8 Capteur::calc_zam(qint8 tend, qreal m_pres) {
     }
 }
 
+/*!
+ *  \brief Description des temps possible
+ *
+ * Traduction des états possible ( http://drkfs.net/zambretti.htm) et mise en vecteur.
+ * \return {Renvoi une description}
+ */
 
 QString Capteur::descrip_zam(qint8 z) {
 	std::vector<QString> res = {
@@ -135,6 +195,12 @@ QString Capteur::descrip_zam(qint8 z) {
     };
 	return res[z];
 }
+
+/*!
+ *  \brief Noms des images pour les icônes météo
+ *
+ *  \return {Renvoi le noms d'une image}
+ */
 
 QString Capteur::image_zam(qint8 z) {
 	std::vector<QString> res = {

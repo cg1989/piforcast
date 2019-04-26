@@ -1,0 +1,6 @@
+<map id="src/sensors.h" name="src/sensors.h">
+<area shape="rect" id="node2" href="$capteur_8h.html" title="Class objet de base pour le projet Pi4Cast. " alt="" coords="77,80,176,107"/>
+<area shape="rect" id="node3" href="$capteur_8cpp.html" title="src/capteur.cpp" alt="" coords="5,155,117,181"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="153,155,250,181"/>
+<area shape="rect" id="node5" href="$sensors_8c.html" title="Implémentation pour les drivers du capteurs. " alt="" coords="251,80,352,107"/>
+</map>
