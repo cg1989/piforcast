@@ -50,6 +50,11 @@ CLonage du dépôt:
 ```
 git clone http://github.com/cg1989/piforcast
 ```
+puis aller dans le dossier nouvellement téléchargé.
+
+```
+cd piforcast
+```
 
 ## Compilation
 
