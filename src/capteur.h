@@ -1,12 +1,14 @@
-#ifndef CAPTEUR2_H
-#define CAPTEUR2_H
+#ifndef CAPTEUR_H
+#define CAPTEUR_H
 
 #include <QObject>
 #include <vector>
 #include <utility>
 #include "bme280.h"
 #include "sensors.h"
+#include "source.h"
 #include <QString>
+#include <memory>
 
 using namespace std; 
 
@@ -27,13 +29,10 @@ private:
     vector<qreal> pres_heure;
     int m_tend = 0;
     
-    qreal m_temp;
-    qreal m_pres;
-    qreal m_humi;
     qreal m_pres_min;
     QString m_image;
     QString m_des;
-    struct bme280_dev m_dev;
+    shared_ptr<Source> m_source;
     
     
 signals:
@@ -61,9 +60,6 @@ public:
     QString image() const;
     QString des() const;
 
-
-
-
 };
 
-#endif // CAPTEUR2_H 
+#endif // CAPTEUR_H 
