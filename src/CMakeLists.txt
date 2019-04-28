@@ -3,3 +3,8 @@ set_property(SOURCE main.cpp PROPERTY SKIP_AUTOGEN ON)
 add_executable(piforcast bme280.c sensors.c capteur.cpp main.cpp ${piforcast_SRCS})
 target_link_libraries(piforcast Qt5::Qml Qt5::Gui)
 
+find_package(Boost COMPONENTS system thread REQUIRED)
+set_property(SOURCE mainserver.cpp PROPERTY SKIP_AUTOMOC ON)
+add_executable(mainserver bme280.c sensors.c mainserver.cpp)
+target_link_libraries(mainserver ${Boost_LIBRARIES})
+target_include_directories(mainserver INTERFACE ${Boost_INCLUDE_DIR})
