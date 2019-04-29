@@ -81,10 +81,10 @@ Pour lancer le projet il suffit d'entrer la commande suivante:
 
 L'application propose deux modes de fonctionnement totalement transparents pour l'utilisateur. 
 
-# Local
+### Local
 
 Le capteur doit être branché sur la raspberry pi hôte, les données sont directement transmises. L'exécution de l'application affiche une interface qui montre les données.
 
-# Distant
+### Distant
 
 Le capteur est branché sur la raspberry pi et celle-ci exporte les données du capteur. Elle peuvent être récupérées sur une autre instance de l'application, sur une machine connecté au réseau.
