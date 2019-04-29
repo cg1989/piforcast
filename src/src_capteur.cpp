@@ -2,6 +2,7 @@
 #include <QtGlobal>
 #include <vector>
 #include <utility>
+#include <cmath>
 #include "src_capteur.h"
 #include "sensors.h"
 

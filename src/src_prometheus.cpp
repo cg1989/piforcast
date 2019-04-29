@@ -12,7 +12,7 @@ bool Src_prometheus::initialisation(){
 }
 
 void Src_prometheus::refresh() {
-    HttpClient client("192.168.1.22:9090");
+    HttpClient client("192.168.1.200:8080");
   try {
     auto r1 = client.request("GET", "/metrics");
     stringstream ss;
@@ -21,6 +21,24 @@ void Src_prometheus::refresh() {
     qreal value;
     while(ss>>buf) {
 	//cout << cnt << " - " << buf << endl;
+	if (buf.find("go_gc_duration_seconds") != std::string::npos && buf.find("quantile=\"0.5\"") != std::string::npos) {
+	    ss>>buf;
+	    QString tmp = QString::fromStdString(buf);
+#ifdef __arm__
+	    value = tmp.toFloat();
+#else
+	    value = tmp.toDouble();
+#endif
+	}
+	if (buf.find("go_gc_duration_seconds") != std::string::npos && buf.find("quantile=\"0.5\"") != std::string::npos) {
+	    ss>>buf;
+	    QString tmp = QString::fromStdString(buf);
+#ifdef __arm__
+	    value = tmp.toFloat();
+#else
+	    value = tmp.toDouble();
+#endif
+	}
 	if (buf.find("go_gc_duration_seconds") != std::string::npos && buf.find("quantile=\"0.5\"") != std::string::npos) {
 	    ss>>buf;
 	    QString tmp = QString::fromStdString(buf);
