@@ -1,6 +1,8 @@
 #include "capteur.h"
 #include "sensors.h"
 #include "bme280.h"
+#include "src_capteur.h"
+#include "src_prometheus.h"
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -34,26 +36,12 @@ Capteur::Capteur() {
  */
     
 void Capteur::initialisation(){
-    m_dev = init();
+    m_source = make_shared<Src_capteur>();
+    if (! m_source->initialisation()) {
+	m_source = make_shared<Src_prometheus>();
+    }
 }
 
-/*!
- *  \brief Standardisation de la pression atmosphérique
- *
- *  formule du nivellement barométrique: https://fr.wikipedia.org/wiki/Variation_de_la_pression_atmosphérique_avec_l%27altitude
- *
- * \param <pres> { la pression mesurée }
- * \param <alt> { altitude fixé dans le code à 151m (toulouse)}
- * \param <temp> { la température mesurée }
- * 
- * \return {valeur de pression ramené à l'altitude 0}
- */
-
-qreal convert_pres(qreal pres, qreal alt,qreal temp){
-    qreal kelvin = temp + 273.15;
-    return pres+1013.25*(1-pow((kelvin-0.0065*alt)/kelvin,5.255));
-
-}
 
 /*!
  *  \brief Calcul de tendance
@@ -92,19 +80,14 @@ int Capteur::tendance(std::vector<qreal>  vec){
 
 //refresh
 void Capteur::refresh() {
-    
-    struct bme280_data data;
-    data = getData(&m_dev);
-    m_temp = data.temperature;
-    m_humi = data.humidity;
-    m_pres = convert_pres(data.pressure/100,151, m_temp);
-    
+    m_source->refresh();
+
     if (count < 60){
-        sum_pres = sum_pres + m_pres;
+        sum_pres = sum_pres + pres();
     }else{
         m_pres_min = sum_pres/60;
         count=0;
-        sum_pres=m_pres;
+        sum_pres=pres();
         pres_heure.push_back(m_pres_min);
         m_tend = tendance(pres_heure);
         if(pres_heure.size() > 60){
@@ -114,9 +97,11 @@ void Capteur::refresh() {
     }
     
 
-    qint8 zambretti = calc_zam(m_tend,m_pres);
-    m_image = image_zam(zambretti-1);
-    m_des = descrip_zam(zambretti-1);
+    qint8 zambretti = calc_zam(m_tend,pres());
+    if (zambretti>0 && zambretti<27 ) {
+	m_image = image_zam(zambretti-1);
+	m_des = descrip_zam(zambretti-1);
+    }
     
     count++;
     
@@ -168,6 +153,7 @@ qint8 Capteur::calc_zam(qint8 tend, qreal m_pres) {
         if (m_pres >= 959){return 25;} 
         if (m_pres >= 947){return 26;} 
     }
+    return 0;
 }
 
 /*!
@@ -203,6 +189,7 @@ QString Capteur::descrip_zam(qint8 z) {
  */
 
 QString Capteur::image_zam(qint8 z) {
+	std::cout << "Valeur de Z: " << z << std::endl;
 	std::vector<QString> res = {
 		"soleil","soleil","peunuageux","peunuageux","averses","peunuageux","averses","averses","aversesfortes","eclaircies",
 		"aversesfortes","eclaircies","eclaircies","aversesfortes","aversesfortes","changeant","eclaircies","averses","petitepluie","nuageux",
@@ -213,19 +200,19 @@ QString Capteur::image_zam(qint8 z) {
 //getteurs
 qreal Capteur::temp() const
 {
-    return m_temp;
+    return m_source->getTemp();
 }
 
 
 qreal Capteur::pres() const
 {
-    return m_pres;
+    return m_source->getPres();
 }
 
 
 qreal Capteur::humi() const
 {
-    return m_humi;
+    return m_source->getHumi();
 }
 
 

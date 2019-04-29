@@ -9,7 +9,7 @@ extern "C" {
 #include <fcntl.h>
 #include <stdint.h>
 
-struct bme280_dev init();
+int8_t init(struct bme280_dev *dev);
 
 struct bme280_data getData(struct bme280_dev *dev);
 
