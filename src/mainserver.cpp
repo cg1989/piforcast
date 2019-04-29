@@ -18,7 +18,7 @@ int main() {
   // Unless you do more heavy non-threaded processing in the resources,
   // 1 thread is usually faster than several threads
   HttpServer server;
-  dev = init();
+  init(&dev);
 
   server.config.port = 8080;
 
