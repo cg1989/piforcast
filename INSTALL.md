@@ -14,7 +14,7 @@ Avoir une une rapsberry pi avec une distribution à jour de raspbian. Voir  [ce 
 Un certain nombre de paquets devront être installer sur votre distribution pour que vous puissiez compiler et exécuter corerctement le projet.
 
 ```
-sudo apt-get install qt5-default qt5-qmake qtdeclarative5-dev qtdeclarative5-dev-tools qml-module-qtquick2 qml-module-qtquick-controls
+sudo apt-get install qt5-default qt5-qmake qtdeclarative5-dev qtdeclarative5-dev-tools qml-module-qtquick2 qml-module-qtquick-controls libboost-all-dev
 ```
 
 Cmake est utilisé dans la compilation du projet, il peut être installer comme suit:
@@ -77,4 +77,14 @@ Pour lancer le projet il suffit d'entrer la commande suivante:
 ```
 ./src/piforcast
 ```
+## Fonctionnement
 
+L'application propose deux modes de fonctionnement totalement transparents pour l'utilisateur. 
+
+# Local
+
+Le capteur doit être branché sur la raspberry pi hôte, les données sont directement transmises. L'exécution de l'application affiche une interface qui montre les données.
+
+# Distant
+
+Le capteur est branché sur la raspberry pi et celle-ci exporte les données du capteur. Elle peuvent être récupérées sur une autre instance de l'application, sur une machine connecté au réseau.
