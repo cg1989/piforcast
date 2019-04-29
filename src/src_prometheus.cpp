@@ -12,7 +12,7 @@ bool Src_prometheus::initialisation(){
 }
 
 void Src_prometheus::refresh() {
-    HttpClient client("192.168.1.200:8080");
+    HttpClient client("192.168.1.101:8080");
   try {
     auto r1 = client.request("GET", "/metrics");
     stringstream ss;
@@ -20,32 +20,32 @@ void Src_prometheus::refresh() {
     string buf;
     qreal value;
     while(ss>>buf) {
-	//cout << cnt << " - " << buf << endl;
-	if (buf.find("go_gc_duration_seconds") != std::string::npos && buf.find("quantile=\"0.5\"") != std::string::npos) {
+	//cout << " - " << buf << endl;
+	if (buf.find("temperature{meteo=\"temp\"}") != std::string::npos ) {
 	    ss>>buf;
 	    QString tmp = QString::fromStdString(buf);
 #ifdef __arm__
-	    value = tmp.toFloat();
+	    m_temp = tmp.toFloat();
 #else
-	    value = tmp.toDouble();
+	    m_temp = tmp.toDouble();
 #endif
 	}
-	if (buf.find("go_gc_duration_seconds") != std::string::npos && buf.find("quantile=\"0.5\"") != std::string::npos) {
+	if (buf.find("humidity{meteo=\"humid\"}") != std::string::npos ) {
 	    ss>>buf;
 	    QString tmp = QString::fromStdString(buf);
 #ifdef __arm__
-	    value = tmp.toFloat();
+	    m_humi= tmp.toFloat();
 #else
-	    value = tmp.toDouble();
+	    m_humi = tmp.toDouble();
 #endif
 	}
-	if (buf.find("go_gc_duration_seconds") != std::string::npos && buf.find("quantile=\"0.5\"") != std::string::npos) {
+	if (buf.find("pressure{meteo=\"press\"}") != std::string::npos ) {
 	    ss>>buf;
 	    QString tmp = QString::fromStdString(buf);
 #ifdef __arm__
-	    value = tmp.toFloat();
+	    m_pres= tmp.toFloat();
 #else
-	    value = tmp.toDouble();
+	    m_pres = tmp.toDouble();
 #endif
 	}
     }

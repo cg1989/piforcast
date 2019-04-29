@@ -98,10 +98,10 @@ void Capteur::refresh() {
     
 
     qint8 zambretti = calc_zam(m_tend,pres());
-    if (zambretti>0 && zambretti<27 ) {
-	m_image = image_zam(zambretti-1);
-	m_des = descrip_zam(zambretti-1);
-    }
+    //if (zambretti>0 && zambretti<27 ) {
+        m_image = image_zam(zambretti);
+        m_des = descrip_zam(zambretti);
+    //}
     
     count++;
     
@@ -165,6 +165,7 @@ qint8 Capteur::calc_zam(qint8 tend, qreal m_pres) {
 
 QString Capteur::descrip_zam(qint8 z) {
 	std::vector<QString> res = {
+        "Pas de données",
         "Beau temps, calme",                    "Beau fixe",
         "S'améliorant vers beau temps",         "Beau, se dégradant légérement",
         "Beau, averses possible",               "Assez beau, s'améliorant",
@@ -189,8 +190,8 @@ QString Capteur::descrip_zam(qint8 z) {
  */
 
 QString Capteur::image_zam(qint8 z) {
-	std::cout << "Valeur de Z: " << z << std::endl;
 	std::vector<QString> res = {
+        "defaut",
 		"soleil","soleil","peunuageux","peunuageux","averses","peunuageux","averses","averses","aversesfortes","eclaircies",
 		"aversesfortes","eclaircies","eclaircies","aversesfortes","aversesfortes","changeant","eclaircies","averses","petitepluie","nuageux",
 		"petitepluie","pluie","pluie","pluie","orage","orage"};
