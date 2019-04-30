@@ -1,8 +1,0 @@
-<map id="src/mainserver.cpp" name="src/mainserver.cpp">
-<area shape="rect" id="node2" href="$server__http_8hpp.html" title="Définition pour la partie serveur du serveur web Pour en savoir plus: https://github.com/eidheim/Simple&#45;Web&#45;Server. " alt="" coords="587,80,727,107"/>
-<area shape="rect" id="node21" href="$sensors_8h.html" title="sensors.h" alt="" coords="1334,80,1412,107"/>
-<area shape="rect" id="node3" href="$utility_8hpp.html" title="utility.hpp" alt="" coords="1076,155,1155,181"/>
-<area shape="rect" id="node4" href="$status__code_8hpp.html" title="status_code.hpp" alt="" coords="874,229,992,256"/>
-<area shape="rect" id="node22" href="$bme280_8h.html" title="Sensor driver for BME280 sensor. " alt="" coords="1444,155,1523,181"/>
-<area shape="rect" id="node23" href="$bme280__defs_8h.html" title="Sensor driver for BME280 sensor. " alt="" coords="1444,229,1555,256"/>
-</map>

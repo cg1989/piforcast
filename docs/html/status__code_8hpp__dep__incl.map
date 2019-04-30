@@ -1,7 +1,0 @@
-<map id="src/sws/status_code.hpp" name="src/sws/status_code.hpp">
-<area shape="rect" id="node2" href="$utility_8hpp.html" title="src/sws/utility.hpp" alt="" coords="115,80,243,107"/>
-<area shape="rect" id="node3" href="$server__http_8hpp.html" title="Définition pour la partie serveur du serveur web Pour en savoir plus: https://github.com/eidheim/Simple&#45;Web&#45;Server. " alt="" coords="5,155,168,181"/>
-<area shape="rect" id="node5" href="$client__http_8hpp.html" title="Définition pour la partie client du serveur web Pour en savoir plus: https://github.com/eidheim/Simple&#45;Web&#45;Server. " alt="" coords="192,155,349,181"/>
-<area shape="rect" id="node4" href="$mainserver_8cpp.html" title="Script qui permet l&#39;envoi des données sur le réseau. " alt="" coords="20,229,153,256"/>
-<area shape="rect" id="node6" href="$src__prometheus_8cpp.html" title="réecriture des méthodes initialisation et refresh lorsque le projet doit récupérer la donnée sur le r..." alt="" coords="189,229,352,256"/>
-</map>
