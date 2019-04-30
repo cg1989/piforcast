@@ -1,0 +1,5 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_source.html" title="setteur et getteur pour les métriques, utilisé lors de la reception des données. " alt="" coords="5,31,68,57"/>
+<area shape="rect" id="node2" href="$class_src__capteur.html" title="Src_capteur" alt="" coords="129,5,221,32"/>
+<area shape="rect" id="node3" href="$class_src__prometheus.html" title="Src_prometheus" alt="" coords="116,56,233,83"/>
+</map>
