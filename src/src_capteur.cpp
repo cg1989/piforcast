@@ -6,7 +6,12 @@
 #include "src_capteur.h"
 #include "sensors.h"
 
-
+/*!
+ * \file src_capteur.cpp
+ * \brief Réeciture des méthodes init() et refresh() pour le mode local
+ * \author Camille Geimer & Dominique Jau
+ * \version 1.0
+ */
 
 /*!
  *  \brief Standardisation de la pression atmosphérique

@@ -8,6 +8,13 @@
 #include <unordered_set>
 #include <vector>
 
+/*!
+ * \file client_http.hpp
+ * \brief Définition pour la partie client du serveur web
+ * Pour en savoir plus: https://github.com/eidheim/Simple-Web-Server
+ * \author Camille Geimer & Dominique Jau
+ * \version 1.0
+ */
 #ifdef USE_STANDALONE_ASIO
 #include <asio.hpp>
 #include <asio/steady_timer.hpp>

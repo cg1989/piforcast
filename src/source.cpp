@@ -1,4 +1,14 @@
 #include "source.h"
+    /*!
+ * \file source.cpp
+ * \brief setteur et getteur de base
+ * \author Camille Geimer & Dominique Jau
+ * \version 1.0
+ */
+/*!
+ * \class Source source.h  
+ * \brief setteur et getteur pour les métriques, utilisé lors de la reception des données.
+ */
     
     Source::Source(){
 	

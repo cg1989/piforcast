@@ -3,6 +3,12 @@
 #include <algorithm>
 #include <fstream>
 #include <vector>
+/*!
+ * \file mainserver.cpp 
+ * \brief Script qui permet l'envoi des données sur le réseau. 
+ * \author Camille Geimer & Dominique Jau
+ * \version 1.0
+ */
 
 using namespace std;
 using HttpServer = SimpleWeb::Server<SimpleWeb::HTTP>;

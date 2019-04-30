@@ -11,13 +11,13 @@
 #include <QDebug>
 
 /*!
- * \file capteur.h
+ * \file capteur.cpp
  * \brief Class objet de base pour le projet Pi4Cast
  * \author Camille Geimer & Dominique Jau
  * \version 1.0
  */
 
-/*! \class Capteur
+/*! \class Capteur capteur.h capteur
  * \brief classe representant le capteur.
  *
  *  La classe gére toutes les données du capteur (température, pression et humidité) à travers le fichier sensors.c

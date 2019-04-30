@@ -3,6 +3,12 @@
 #include <fstream>
 #include <QString>
 #include <string>
+/*!
+ * \file src_prometheus.cpp
+ * \brief réecriture des méthodes initialisation et refresh lorsque le projet doit récupérer la donnée sur le réseau.
+ * \author Camille Geimer & Dominique Jau
+ * \version 1.0
+ */
 
 using namespace std;
 using HttpClient = SimpleWeb::Client<SimpleWeb::HTTP>;
