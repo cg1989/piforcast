@@ -171,7 +171,7 @@ QString Capteur::descrip_zam(qint8 z) {
         "Beau, averses possibles",               "Assez beau, s'améliorant",
         "Assez beau, averses prochaines",       "Assez beau, se dégradant",
         "Averses, s'améliorant",                "Changeant, nuageux",
-        "Averses probable",                     "Nuageux pouvant s'améliorer",
+        "Averses probables",                     "Nuageux pouvant s'améliorer",
         "Nuageux s'améliorant",                 "Averses, brèves éclaircies",
         "Averses, se dégradant",                "Changeant, pluie possible",
         "Incertain, brèves éclaircies",         "Nuageux, pluie à venir",
