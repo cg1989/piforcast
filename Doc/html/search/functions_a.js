@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['user_5fdelay_5fms',['user_delay_ms',['../sensors_8c.html#adc86d5995b888a6f4ef7dd5647b94f8f',1,'sensors.c']]],
-  ['user_5fi2c_5fread',['user_i2c_read',['../sensors_8c.html#a61d05d759826396913c31963c102ed66',1,'sensors.c']]],
-  ['user_5fi2c_5fwrite',['user_i2c_write',['../sensors_8c.html#af8c157ca16fed243ea76c8a1155e8afd',1,'sensors.c']]]
+  ['operator_28_29',['operator()',['../class_simple_web_1_1_case_insensitive_equal.html#a7de4bafa287bc3fd58da6372f76c8a88',1,'SimpleWeb::CaseInsensitiveEqual::operator()()'],['../class_simple_web_1_1_case_insensitive_hash.html#ad30c08797afb2d166ce1e3ea36802a3d',1,'SimpleWeb::CaseInsensitiveHash::operator()()']]]
 ];

@@ -2,15 +2,25 @@ var NAVTREE =
 [
   [ "Pi4cast", "index.html", [
     [ "Modules", "modules.html", "modules" ],
+    [ "Espaces de nommage", null, [
+      [ "Liste des espaces de nommage", "namespaces.html", "namespaces" ],
+      [ "Membres de l'espace de nommage", "namespacemembers.html", [
+        [ "Tout", "namespacemembers.html", null ],
+        [ "Fonctions", "namespacemembers_func.html", null ],
+        [ "Définitions de type", "namespacemembers_type.html", null ],
+        [ "Énumérations", "namespacemembers_enum.html", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Liste des classes", "annotated.html", "annotated_dup" ],
       [ "Index des classes", "classes.html", null ],
       [ "Hiérarchie des classes", "hierarchy.html", "hierarchy" ],
       [ "Membres de classe", "functions.html", [
-        [ "Tout", "functions.html", null ],
+        [ "Tout", "functions.html", "functions_dup" ],
         [ "Fonctions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
-        [ "Propriétés", "functions_prop.html", null ]
+        [ "Propriétés", "functions_prop.html", null ],
+        [ "Fonctions associées", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Fichiers", null, [
@@ -31,7 +41,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"group___b_m_e280.html#gaf7371331e2fa7adb92322120ace956c2"
+"functions_d.html",
+"namespacemembers_enum.html"
 ];
 
 var SYNCONMSG = 'cliquez pour désactiver la synchronisation du panel';

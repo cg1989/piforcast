@@ -27,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo_mini.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Pi4cast
    &#160;<span id="projectnumber">1.0</span>
@@ -106,10 +106,12 @@ Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier
 <div class="dyncontent">
 <div class="center"><img src="sensors_8h__dep__incl.png" border="0" usemap="#src_2sensors_8hdep" alt=""/></div>
 <map name="src_2sensors_8hdep" id="src_2sensors_8hdep">
-<area shape="rect" id="node2" href="capteur_8h.html" title="Class objet de base pour le projet Pi4Cast. " alt="" coords="77,80,176,107"/>
-<area shape="rect" id="node3" href="capteur_8cpp.html" title="src/capteur.cpp" alt="" coords="5,155,117,181"/>
+<area shape="rect" id="node2" href="capteur_8h.html" title="src/capteur.h" alt="" coords="77,80,176,107"/>
+<area shape="rect" id="node3" href="capteur_8cpp.html" title="Class objet de base pour le projet Pi4Cast. " alt="" coords="5,155,117,181"/>
 <area shape="rect" id="node4" href="main_8cpp.html" title="src/main.cpp" alt="" coords="153,155,250,181"/>
-<area shape="rect" id="node5" href="sensors_8c.html" title="Implémentation pour les drivers du capteurs. " alt="" coords="251,80,352,107"/>
+<area shape="rect" id="node5" href="mainserver_8cpp.html" title="Script qui permet l&#39;envoi des données sur le réseau. " alt="" coords="251,80,384,107"/>
+<area shape="rect" id="node6" href="sensors_8c.html" title="Implémentation pour les drivers du capteurs. " alt="" coords="408,80,509,107"/>
+<area shape="rect" id="node7" href="src__capteur_8cpp.html" title="Réeciture des méthodes init() et refresh() pour le mode local. " alt="" coords="534,80,671,107"/>
 </map>
 </div>
 </div>
@@ -117,10 +119,9 @@ Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Fonctions</h2></td></tr>
-<tr class="memitem:aad9b70d7f13fdfb266c6081d1b9f3447"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbme280__dev.html">bme280_dev</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sensors_8h.html#aad9b70d7f13fdfb266c6081d1b9f3447">init</a> ()</td></tr>
-<tr class="memdesc:aad9b70d7f13fdfb266c6081d1b9f3447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction d'initiatlisation du capteur.  <a href="#aad9b70d7f13fdfb266c6081d1b9f3447">Plus de détails...</a><br /></td></tr>
-<tr class="separator:aad9b70d7f13fdfb266c6081d1b9f3447"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f5ee464e40b279e808133814253ee6c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbme280__data.html">bme280_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sensors_8h.html#a5f5ee464e40b279e808133814253ee6c">getData</a> (struct <a class="el" href="structbme280__dev.html">bme280_dev</a> *dev)</td></tr>
+<tr class="memitem:aee090ec6d5e72568364fe7493ab09995"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sensors_8h.html#aee090ec6d5e72568364fe7493ab09995">init</a> (struct <a class="el" href="structbme280__dev.html">bme280_dev</a> *<a class="el" href="mainserver_8cpp.html#a45747b2dff4fdb857d97f2d0eff44eb3">dev</a>)</td></tr>
+<tr class="separator:aee090ec6d5e72568364fe7493ab09995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f5ee464e40b279e808133814253ee6c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbme280__data.html">bme280_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sensors_8h.html#a5f5ee464e40b279e808133814253ee6c">getData</a> (struct <a class="el" href="structbme280__dev.html">bme280_dev</a> *<a class="el" href="mainserver_8cpp.html#a45747b2dff4fdb857d97f2d0eff44eb3">dev</a>)</td></tr>
 <tr class="separator:a5f5ee464e40b279e808133814253ee6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentation des fonctions</h2>
@@ -140,27 +141,25 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="sensors_8c_source.html#l00115">115</a> du fichier <a class="el" href="sensors_8c_source.html">sensors.c</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="sensors_8c_source.html#l00116">116</a> du fichier <a class="el" href="sensors_8c_source.html">sensors.c</a>.</p>
 
 </div>
 </div>
-<a id="aad9b70d7f13fdfb266c6081d1b9f3447"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad9b70d7f13fdfb266c6081d1b9f3447">&#9670;&nbsp;</a></span>init()</h2>
+<a id="aee090ec6d5e72568364fe7493ab09995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee090ec6d5e72568364fe7493ab09995">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structbme280__dev.html">bme280_dev</a> init </td>
+          <td class="memname">int8_t init </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="structbme280__dev.html">bme280_dev</a> *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Fonction d'initiatlisation du capteur. </p>
-<dl class="section return"><dt>Renvoie</dt><dd>BME280 Init Result is: 0 si pas d'erreur, -1 ou -2 sinon. </dd></dl>
 
 <p class="definition">Définition à la ligne <a class="el" href="sensors_8c_source.html#l00067">67</a> du fichier <a class="el" href="sensors_8c_source.html">sensors.c</a>.</p>
 

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['getdata',['getData',['../sensors_8c.html#a5f5ee464e40b279e808133814253ee6c',1,'getData(struct bme280_dev *dev):&#160;sensors.c'],['../sensors_8h.html#a5f5ee464e40b279e808133814253ee6c',1,'getData(struct bme280_dev *dev):&#160;sensors.c']]]
+  ['encode',['encode',['../class_simple_web_1_1_percent.html#a6d26f8d8b1ab7000c44be820e0b995aa',1,'SimpleWeb::Percent']]],
+  ['error_5fcode',['error_code',['../namespace_simple_web.html#a90cdf4bbc4e291b5f44c285f82e4b1d6',1,'SimpleWeb']]]
 ];

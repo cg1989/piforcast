@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['humi',['humi',['../class_capteur.html#a8c8aa5b05aa228d75cc7b4c2812bb2a1',1,'Capteur']]],
-  ['humichanged',['humiChanged',['../class_capteur.html#a71337039556acbb466715f18f48c670a',1,'Capteur']]]
+  ['encode',['encode',['../class_simple_web_1_1_percent.html#a6d26f8d8b1ab7000c44be820e0b995aa',1,'SimpleWeb::Percent']]]
 ];

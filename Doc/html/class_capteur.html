@@ -27,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo_mini.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Pi4cast
    &#160;<span id="projectnumber">1.0</span>
@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('class_capteur.html','');});
 <p>classe representant le capteur.  
  <a href="class_capteur.html#details">Plus de détails...</a></p>
 
-<p><code>#include &lt;<a class="el" href="capteur_8h_source.html">capteur.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="capteur_8h_source.html">capteur</a>&gt;</code></p>
 <div class="dynheader">
 Graphe d'héritage de Capteur:</div>
 <div class="dyncontent">
@@ -180,7 +180,7 @@ Propriétés</h2></td></tr>
 <div class="textblock"><p>classe representant le capteur. </p>
 <p>La classe gére toutes les données du capteur (température, pression et humidité) à travers le fichier <a class="el" href="sensors_8c.html" title="Implémentation pour les drivers du capteurs. ">sensors.c</a> Elle gère aussi l'algorithme de Zambretti </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="capteur_8h_source.html#l00013">13</a> du fichier <a class="el" href="capteur_8h_source.html">capteur.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="capteur_8h_source.html#l00015">15</a> du fichier <a class="el" href="capteur_8h_source.html">capteur.h</a>.</p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a id="a3cc25d56ba8f20c1e0f0284afaed58d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3cc25d56ba8f20c1e0f0284afaed58d6">&#9670;&nbsp;</a></span>Capteur()</h2>
@@ -197,7 +197,7 @@ Propriétés</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="capteur_8cpp_source.html#l00025">25</a> du fichier <a class="el" href="capteur_8cpp_source.html">capteur.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="capteur_8cpp_source.html#l00027">27</a> du fichier <a class="el" href="capteur_8cpp_source.html">capteur.cpp</a>.</p>
 
 </div>
 </div>
@@ -231,7 +231,7 @@ Propriétés</h2></td></tr>
 <p>Algorithme de Zambretti. </p>
 <p>Implémentation de l'algorithme de Zambretti tel que décrit à cette source: <a href="http://drkfs.net/zambretti.htm">http://drkfs.net/zambretti.htm</a> </p><dl class="section return"><dt>Renvoie</dt><dd>{Renvoi une valeur de 1 à 26 équivalent au lettre de Zambretti} </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="capteur_8cpp_source.html#l00133">133</a> du fichier <a class="el" href="capteur_8cpp_source.html">capteur.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="capteur_8cpp_source.html#l00118">118</a> du fichier <a class="el" href="capteur_8cpp_source.html">capteur.cpp</a>.</p>
 
 </div>
 </div>
@@ -296,7 +296,7 @@ Propriétés</h2></td></tr>
 <p>Description des temps possible. </p>
 <p>Traduction des états possible ( <a href="http://drkfs.net/zambretti.htm">http://drkfs.net/zambretti.htm</a>) et mise en vecteur. </p><dl class="section return"><dt>Renvoie</dt><dd>{Renvoi une description} </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="capteur_8cpp_source.html#l00180">180</a> du fichier <a class="el" href="capteur_8cpp_source.html">capteur.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="capteur_8cpp_source.html#l00166">166</a> du fichier <a class="el" href="capteur_8cpp_source.html">capteur.cpp</a>.</p>
 
 </div>
 </div>
@@ -378,7 +378,7 @@ Propriétés</h2></td></tr>
 <p>Noms des images pour les icônes météo. </p>
 <dl class="section return"><dt>Renvoie</dt><dd>{Renvoi le noms d'une image} </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="capteur_8cpp_source.html#l00205">205</a> du fichier <a class="el" href="capteur_8cpp_source.html">capteur.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="capteur_8cpp_source.html#l00192">192</a> du fichier <a class="el" href="capteur_8cpp_source.html">capteur.cpp</a>.</p>
 
 </div>
 </div>
@@ -425,7 +425,7 @@ Propriétés</h2></td></tr>
 <p>Initialisateur. </p>
 <p>Initialise le capteur BME280 </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="capteur_8cpp_source.html#l00036">36</a> du fichier <a class="el" href="capteur_8cpp_source.html">capteur.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="capteur_8cpp_source.html#l00038">38</a> du fichier <a class="el" href="capteur_8cpp_source.html">capteur.cpp</a>.</p>
 
 </div>
 </div>
@@ -497,7 +497,7 @@ Propriétés</h2></td></tr>
 <p>Méthode de rafraichissement transmise à l'interface. </p>
 <p>Cette méthode permet de récupérer les variables du capteur et de les rendre disponible pour l'interface graphique Elle gère aussi la création du vecteur des pressions et son alimentation en données. Elle transmet aussi les résultats de l'algorithmede Zambretti </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="capteur_8cpp_source.html#l00094">94</a> du fichier <a class="el" href="capteur_8cpp_source.html">capteur.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="capteur_8cpp_source.html#l00082">82</a> du fichier <a class="el" href="capteur_8cpp_source.html">capteur.cpp</a>.</p>
 
 </div>
 </div>
@@ -588,7 +588,7 @@ Propriétés</h2></td></tr>
 <dd>
 {Renvoi une valeur de -1, 0 ou 1 en cas de tendance respectivement négative, nulle ou positive}} </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="capteur_8cpp_source.html#l00069">69</a> du fichier <a class="el" href="capteur_8cpp_source.html">capteur.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="capteur_8cpp_source.html#l00057">57</a> du fichier <a class="el" href="capteur_8cpp_source.html">capteur.cpp</a>.</p>
 
 </div>
 </div>
@@ -638,7 +638,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="capteur_8h_source.html#l00020">20</a> du fichier <a class="el" href="capteur_8h_source.html">capteur.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="capteur_8h_source.html#l00022">22</a> du fichier <a class="el" href="capteur_8h_source.html">capteur.h</a>.</p>
 
 </div>
 </div>
@@ -662,7 +662,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="capteur_8h_source.html#l00018">18</a> du fichier <a class="el" href="capteur_8h_source.html">capteur.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="capteur_8h_source.html#l00020">20</a> du fichier <a class="el" href="capteur_8h_source.html">capteur.h</a>.</p>
 
 </div>
 </div>
@@ -686,7 +686,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="capteur_8h_source.html#l00021">21</a> du fichier <a class="el" href="capteur_8h_source.html">capteur.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="capteur_8h_source.html#l00023">23</a> du fichier <a class="el" href="capteur_8h_source.html">capteur.h</a>.</p>
 
 </div>
 </div>
@@ -710,7 +710,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="capteur_8h_source.html#l00017">17</a> du fichier <a class="el" href="capteur_8h_source.html">capteur.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="capteur_8h_source.html#l00019">19</a> du fichier <a class="el" href="capteur_8h_source.html">capteur.h</a>.</p>
 
 </div>
 </div>
@@ -734,7 +734,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="capteur_8h_source.html#l00016">16</a> du fichier <a class="el" href="capteur_8h_source.html">capteur.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="capteur_8h_source.html#l00018">18</a> du fichier <a class="el" href="capteur_8h_source.html">capteur.h</a>.</p>
 
 </div>
 </div>
@@ -758,7 +758,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="capteur_8h_source.html#l00019">19</a> du fichier <a class="el" href="capteur_8h_source.html">capteur.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="capteur_8h_source.html#l00021">21</a> du fichier <a class="el" href="capteur_8h_source.html">capteur.h</a>.</p>
 
 </div>
 </div>
