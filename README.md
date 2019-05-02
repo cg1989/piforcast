@@ -1,4 +1,4 @@
-![Pi4cast](https://github.com/cg1989/piforcast/blob/master/Doc/logo.svg)
+![Pi4cast](https://github.com/cg1989/piforcast/blob/master/docs/logo.svg)
 # Pi4Cast
 
 Pi4Cast est une application embarqué sur Raspberry Pi pouvant prédire le temps grâce à l'algorithme de Zambretti et l'utilisation d'une sonde BME280.
