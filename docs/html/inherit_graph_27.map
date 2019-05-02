@@ -1,0 +1,5 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node2" href="$class_simple_web_1_1_client_base_1_1_connection.html" title="SimpleWeb::ClientBase\l\&lt; socket_type \&gt;::Connection" alt="" coords="220,5,411,47"/>
+<area shape="rect" id="node3" href="$class_simple_web_1_1_server_base_1_1_connection.html" title="SimpleWeb::ServerBase\l\&lt; socket_type \&gt;::Connection" alt="" coords="220,71,411,112"/>
+<area shape="rect" id="node4" href="$class_simple_web_1_1_server_base_1_1_response.html" title="SimpleWeb::ServerBase\l\&lt; socket_type \&gt;::Response" alt="" coords="223,136,407,177"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="src/sensors.h" name="src/sensors.h">
+<area shape="rect" id="node2" href="$capteur_8h.html" title="src/capteur.h" alt="" coords="77,80,176,107"/>
+<area shape="rect" id="node3" href="$capteur_8cpp.html" title="Class objet de base pour le projet Pi4Cast. " alt="" coords="5,155,117,181"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="153,155,250,181"/>
+<area shape="rect" id="node5" href="$mainserver_8cpp.html" title="Script qui permet l&#39;envoi des données sur le réseau. " alt="" coords="251,80,384,107"/>
+<area shape="rect" id="node6" href="$sensors_8c.html" title="Implémentation pour les drivers du capteurs. " alt="" coords="408,80,509,107"/>
+<area shape="rect" id="node7" href="$src__capteur_8cpp.html" title="Réeciture des méthodes init() et refresh() pour le mode local. " alt="" coords="534,80,671,107"/>
+</map>
